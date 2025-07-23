@@ -1,0 +1,3 @@
+[lfs]
+     url = https://git-lfs.lsst.cloud/lsst/ap_verify_ci_dp1_ecdfs
+     locksverify = false
