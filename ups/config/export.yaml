@@ -1,0 +1,3676 @@
+description: Butler Data Repository Export
+version: 1.0.2
+universe_version: 8
+universe_namespace: daf_butler
+data:
+- type: dimension
+  element: instrument
+  records:
+  - name: LSSTComCam
+    visit_max: 7050123199999
+    visit_system: 2
+    exposure_max: 7050123199999
+    detector_max: 1000
+    class_name: lsst.obs.lsst.LsstComCam
+- type: dimension
+  element: skymap
+  records:
+  - name: lsst_cells_v1
+    hash: !!binary |
+      4nNuQSRN8Au9uTrsrArkstGd2pE=
+    tract_max: 18938
+    patch_nx_max: 10
+    patch_ny_max: 10
+- type: dimension
+  element: day_obs
+  records:
+  - instrument: LSSTComCam
+    id: 20241111
+    datetime_begin: !butler_time/tai/iso '2024-11-11 12:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2024-11-12 12:00:00.000000000'
+  - instrument: LSSTComCam
+    id: 20241116
+    datetime_begin: !butler_time/tai/iso '2024-11-16 12:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2024-11-17 12:00:00.000000000'
+  - instrument: LSSTComCam
+    id: 20241119
+    datetime_begin: !butler_time/tai/iso '2024-11-19 12:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2024-11-20 12:00:00.000000000'
+  - instrument: LSSTComCam
+    id: 20241120
+    datetime_begin: !butler_time/tai/iso '2024-11-20 12:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2024-11-21 12:00:00.000000000'
+  - instrument: LSSTComCam
+    id: 20241128
+    datetime_begin: !butler_time/tai/iso '2024-11-28 12:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2024-11-29 12:00:00.000000000'
+  - instrument: LSSTComCam
+    id: 20241206
+    datetime_begin: !butler_time/tai/iso '2024-12-06 12:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2024-12-07 12:00:00.000000000'
+- type: dimension
+  element: detector
+  records:
+  - instrument: LSSTComCam
+    id: 0
+    full_name: R22_S00
+    name_in_raft: S00
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 1
+    full_name: R22_S01
+    name_in_raft: S01
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 2
+    full_name: R22_S02
+    name_in_raft: S02
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 3
+    full_name: R22_S10
+    name_in_raft: S10
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 4
+    full_name: R22_S11
+    name_in_raft: S11
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 5
+    full_name: R22_S12
+    name_in_raft: S12
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 6
+    full_name: R22_S20
+    name_in_raft: S20
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 7
+    full_name: R22_S21
+    name_in_raft: S21
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTComCam
+    id: 8
+    full_name: R22_S22
+    name_in_raft: S22
+    raft: R22
+    purpose: SCIENCE
+- type: dimension
+  element: group
+  records:
+  - instrument: LSSTComCam
+    name: '2024-11-12T02:10:52.368'
+  - instrument: LSSTComCam
+    name: '2024-11-17T07:52:30.357'
+  - instrument: LSSTComCam
+    name: '2024-11-20T01:16:40.691'
+  - instrument: LSSTComCam
+    name: '2024-11-21T05:49:25.789'
+  - instrument: LSSTComCam
+    name: '2024-11-29T01:35:04.206'
+  - instrument: LSSTComCam
+    name: '2024-12-07T02:29:08.761'
+- type: dimension
+  element: physical_filter
+  records:
+  - instrument: LSSTComCam
+    name: g_01
+    band: g
+  - instrument: LSSTComCam
+    name: i_06
+    band: i
+  - instrument: LSSTComCam
+    name: r_03
+    band: r
+  - instrument: LSSTComCam
+    name: u_02
+    band: u
+  - instrument: LSSTComCam
+    name: y_04
+    band: y
+  - instrument: LSSTComCam
+    name: z_03
+    band: z
+- type: dimension
+  element: tract
+  records:
+  - skymap: lsst_cells_v1
+    id: 4848
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 700a289343bb65e13fc16a3c6324a1e53f9773f39cdbd7dfbf4062320e9ca9e03fb5243e855433e63f8a647ba4dbd7dfbf0218b45480f0e03fd4df61a18e8ee63f0ffed0ab2437debfde9bd7899face13f7c256d7f5efce53f0a9baba42437debf
+  - skymap: lsst_cells_v1
+    id: 4849
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70c85eb1d542c1e03f5414a85f8021e63f9773f39cdbd7dfbfc0e111beed00e03fc9accf971aaee63f8a647ba4dbd7dfbf3055219a1c45e03f767416685f0be73f10fed0ab2437debf5d3583b17105e13fd10dfa2fc57ee63f0a9baba42437debf
+  - skymap: lsst_cells_v1
+    id: 5063
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70d59bbb7f9948e13f75fe8b39003ce63f27711b323564debf68be02141c8ae03fa7bef7ee16cbe63f9b7c4b393564debf4a759df239cce03f98c5aee11b23e73fdfe03e8da2bddcbf86a2195eb78ae13f920b502c0594e63f05c67286a2bddcbf
+- type: dimension
+  element: visit_system
+  records:
+  - instrument: LSSTComCam
+    id: 0
+    name: one-to-one
+- type: dimension
+  element: exposure
+  records:
+  - instrument: LSSTComCam
+    id: 2024111100094
+    day_obs: 20241111
+    group: '2024-11-12T02:10:52.368'
+    physical_filter: r_03
+    obs_id: CC_O_20241111_000094
+    exposure_time: 30.0
+    dark_time: 30.4405
+    observation_type: science
+    observation_reason: science
+    seq_num: 94
+    seq_start: 94
+    seq_end: 94
+    target_name: slew_icrs
+    science_program: PP-SURVEY
+    tracking_ra: 52.95752495195275
+    tracking_dec: -28.22764144615708
+    sky_angle: 255.14159314132317
+    azimuth: 96.6293772220931
+    zenith_angle: 34.4110269160768
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2024-11-12 02:11:24.465019405'
+    datetime_end: !butler_time/tai/iso '2024-11-12 02:11:54.906000000'
+  - instrument: LSSTComCam
+    id: 2024111600297
+    day_obs: 20241116
+    group: '2024-11-17T07:52:30.357'
+    physical_filter: r_03
+    obs_id: CC_O_20241116_000297
+    exposure_time: 30.0
+    dark_time: 30.4406
+    observation_type: science
+    observation_reason: science
+    seq_num: 297
+    seq_start: 297
+    seq_end: 297
+    target_name: ECDFS
+    science_program: BLOCK-320
+    tracking_ra: 52.97769466726325
+    tracking_dec: -28.150000955094953
+    sky_angle: 164.56524971565605
+    azimuth: 259.49364869754
+    zenith_angle: 44.3090643043601
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2024-11-17 07:53:44.975010753'
+    datetime_end: !butler_time/tai/iso '2024-11-17 07:54:15.416000000'
+  - instrument: LSSTComCam
+    id: 2024111900082
+    day_obs: 20241119
+    group: '2024-11-20T01:16:40.691'
+    physical_filter: r_03
+    obs_id: CC_O_20241119_000082
+    exposure_time: 30.0
+    dark_time: 30.4324
+    observation_type: science
+    observation_reason: science
+    seq_num: 82
+    seq_start: 82
+    seq_end: 82
+    target_name: ECDFS
+    science_program: BLOCK-320
+    tracking_ra: 53.33738052593822
+    tracking_dec: -28.102886000277522
+    sky_angle: 220.71387624310063
+    azimuth: 98.5069126258241
+    zenith_angle: 39.4806598105826
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2024-11-20 01:17:58.894999623'
+    datetime_end: !butler_time/tai/iso '2024-11-20 01:18:29.327000000'
+  - instrument: LSSTComCam
+    id: 2024112000208
+    day_obs: 20241120
+    group: '2024-11-21T05:49:25.789'
+    physical_filter: r_03
+    obs_id: CC_O_20241120_000208
+    exposure_time: 30.0
+    dark_time: 30.4426
+    observation_type: science
+    observation_reason: science
+    seq_num: 208
+    seq_start: 208
+    seq_end: 208
+    target_name: ECDFS
+    science_program: BLOCK-320
+    tracking_ra: 53.16172088325556
+    tracking_dec: -28.148235333552922
+    sky_angle: 101.42788868701288
+    azimuth: 269.9746103049828
+    zenith_angle: 21.006798364862703
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2024-11-21 05:50:26.511982083'
+    datetime_end: !butler_time/tai/iso '2024-11-21 05:50:56.955000000'
+  - instrument: LSSTComCam
+    id: 2024112800140
+    day_obs: 20241128
+    group: '2024-11-29T01:35:04.206'
+    physical_filter: r_03
+    obs_id: CC_O_20241128_000140
+    exposure_time: 30.0
+    dark_time: 30.436
+    observation_type: science
+    observation_reason: science
+    seq_num: 140
+    seq_start: 140
+    seq_end: 140
+    target_name: ECDFS
+    science_program: BLOCK-320
+    tracking_ra: 53.10023578668096
+    tracking_dec: -28.072465432462078
+    sky_angle: 294.04392878594535
+    azimuth: 93.2900437040759
+    zenith_angle: 27.623587832847797
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2024-11-29 01:36:53.677015901'
+    datetime_end: !butler_time/tai/iso '2024-11-29 01:37:24.113000000'
+  - instrument: LSSTComCam
+    id: 2024120600098
+    day_obs: 20241206
+    group: '2024-12-07T02:29:08.761'
+    physical_filter: r_03
+    obs_id: CC_O_20241206_000098
+    exposure_time: 30.0
+    dark_time: 30.4413
+    observation_type: science
+    observation_reason: science
+    seq_num: 98
+    seq_start: 98
+    seq_end: 98
+    target_name: ECDFS
+    science_program: BLOCK-320
+    tracking_ra: 53.0363733181701
+    tracking_dec: -28.206241766919234
+    sky_angle: 241.7912112621763
+    azimuth: 79.4568936735704
+    zenith_angle: 9.344684850111406
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2024-12-07 02:29:41.701996922'
+    datetime_end: !butler_time/tai/iso '2024-12-07 02:30:12.144000000'
+- type: dimension
+  element: patch
+  records:
+  - skymap: lsst_cells_v1
+    tract: 4848
+    id: 90
+    cell_x: 0
+    cell_y: 9
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 702b00123d5bfde03f2203c040b275e63f66fd2c4a3864debf7217f3f4d8e7e03f877495500486e63f0cab8c5ee263debf8da62bf5b1efe03f36b6e06c1b90e63f93d2013e5234debfa4cc22163405e13fe67402a7c97fe63fe36846a1a734debf
+  - skymap: lsst_cells_v1
+    tract: 4848
+    id: 91
+    cell_x: 1
+    cell_y: 9
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 707df1fe064c10e13f182f732e3e67e63fae2d1f237264debf9ade220bd4fae03f769a78a39e77e63fc95ddb4d2f64debf58cc15e9ac02e13ff0f26101b681e63f3e7737b39e34debf76b715b92418e13fdd894fd05571e63f8e4f6a1ee134debf
+  - skymap: lsst_cells_v1
+    tract: 4849
+    id: 89
+    cell_x: 9
+    cell_y: 8
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70f27e8792ecf8e03f8c6cbc62f06ae63f79783dcac88ddebf3c1415bf4fe3e03f41716f901f7be63f671f402f1f8edebfbf50ccf9e4eae03f3b62ee5e8085e63feb8e84c9a05edebf8a73b0888100e13f608206385175e63f7e6045ec4a5edebf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 4
+    cell_x: 4
+    cell_y: 0
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7026e62e1aa1eae03f38e790ea9882e63fc7538964d367debfc8a8717f04d5e03f7fe059bbc992e63f0593ebd7c967debfded743a1b2dce03f378c42a8039de63fa6edded63938debff5a4957b4ff2e03f88f4fbacd28ce63f404cc2544338debf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 5
+    cell_x: 5
+    cell_y: 0
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7069a2dccea8fde03f8538046a4274e63f16c662d6c967debf0eeb6bd416e8e03f29b73f608184e63faae0a164d367debf18f8a32ec5efe03fc4f90f28bb8ee63f48b3da544338debf7e8199635705e13fc7e099007c7ee63f887e58d53938debf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 13
+    cell_x: 3
+    cell_y: 1
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7057b7e07957dee03fdff33aafe999e63f9a48c8b7d53ddebf08ad7c25b0c8e03f2c6cdd5f0caae63f4f677837b93ddebfb2729ca053d0e03ffee0775b38b4e63f2a94cf8d150edebfbf1ef62bfbe5e03fd4de1d9115a4e63feb0eb6e1310edebf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 14
+    cell_x: 4
+    cell_y: 1
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7057afe0c268f1e03fbfa688869f8be63f1a0f2bfbdc3ddebfd1fa3cefcbdbe03f7625687dd09be63fc5028b7bd33ddebfdd1b269b6fe3e03fb490b562fca5e63f9c78f4a82f0edebf4e7dc4a00cf9e03f334a7b4bcb95e63f6177c719390edebf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 15
+    cell_x: 5
+    cell_y: 1
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70ea048ea57004e13f4e9dc6de487de63f2a4c047ad33ddebf294daf76deeee03f3f390c01888de63f967a43fbdc3ddebfafe2fc4e82f6e03f663d31cab397e63fd6bcdf19390edebfad58daaa140ce13f973cee807487e63fda2270a72f0edebf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 16
+    cell_x: 6
+    cell_y: 1
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7084dc52026f17e13f54f0e5cfe56ee63f476d8334b93ddebfddab089ce701e13f950b7402337fe63f926872b6d53ddebffef0549c8b09e13f11d795a95e89e63f934362e0310edebf2111a12a131fe13f057d68491179e63fac35df8a150edebf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 23
+    cell_x: 3
+    cell_y: 2
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70cc8221b515e5e03fc31c2d0ee4a2e63f017e14d7cd13debf6314712f6ecfe03fb0ae17d606b3e63f5c2cf17db113debf6ae48b3307d7e03fe960aeaf24bde63f6ffb4c51fae3ddbf2c7383e2aeece03fff0815d801ade63fc5bccf7d16e4ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 24
+    cell_x: 4
+    cell_y: 2
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70083a7d2527f8e03f904c6bcb9994e63f32997b10d513debfd43ef3248ae2e03f0bcb6fdfcaa4e63fb1bee99dcb13debfacd1c34d23eae03f406f92abe8aee63f9800254814e4ddbf2e9dad72c0ffe03f6ca05681b79ee63f1e6bd7ab1de4ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 25
+    cell_x: 5
+    cell_y: 2
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7093daa32b2f0be13f6cf66d044386e63f2521659ccb13debf03da45d49cf5e03f65e7b4498296e63f24e39310d513debfef99781d36fde03f6db29f02a0a0e63fcd8eefab1de4ddbfe3644e94c812e13f365599a06090e63fcbc6a24614e4ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 26
+    cell_x: 6
+    cell_y: 2
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7046d8fea72d1ee13f8dcf26d1df77e63fc442007bb113debf5e269d1da608e13fdee5912c2d88e63fde73c0d5cd13debfa8dbdd823f10e13f0e6c81cc4a92e63fecc97d7c16e4ddbf5ab5ce27c725e13f765dcf4dfd81e63f22b3604efae3ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 33
+    cell_x: 3
+    cell_y: 3
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70a8423da9caebe03faaf6a1fed1abe63f95f139bab4e9ddbfb5d452fe22d6e03f1019fad4f4bbe63fefe8738898e9ddbfafd86d7eb1dde03fa8eb427b04c6e63fe6ac9327ceb9ddbfa816f04459f3e03f0f14459fe1b5e63f6bd8822ceab9ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 34
+    cell_x: 4
+    cell_y: 3
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70eb375e36dcfee03f9aafb6a9879de63fc3f698e9bbe9ddbfed06ef143fe9e03f4e17eed1b8ade63f1f8b2584b2e9ddbf1f7dabadcdf0e03f5c199c73c8b7e63f46b7f2f9e7b9ddbff4ebdee56a06e13f3147513f97a7e63f309a7450f1b9ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 35
+    cell_x: 5
+    cell_y: 3
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7081247755e411e13f34b778cb308fe63f3409a382b2e9ddbf605c89e151fce03fb785b72a709fe63ffa1eb1e9bbe9ddbf4c16a58ee003e13ffa9b1ec27fa9e63ffa9b8c50f1b9ddbf491883147319e13fbae95e504099e63f0d9c72f8e7b9ddbf
+  - skymap: lsst_cells_v1
+    tract: 5063
+    id: 36
+    cell_x: 6
+    cell_y: 3
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 701400f1e6e224e13f1a37da7bcd80e63fd614878598e9ddbf0c8355445b0fe13f4c9d01f71a91e63f9ebfe7b8b4e9ddbf5eec8d01ea16e13f84df757e2a9be63f4fc0322beab9ddbfef4545b1712ce13fe77860eadc8ae63fb87fab24ceb9ddbf
+- type: dimension
+  element: visit
+  records:
+  - instrument: LSSTComCam
+    id: 2024111100094
+    day_obs: 20241111
+    physical_filter: r_03
+    name: CC_O_20241111_000094
+    seq_num: 94
+    exposure_time: 30.0
+    target_name: slew_icrs
+    observation_reason: science
+    science_program: PP-SURVEY
+    azimuth: 96.6293772220931
+    zenith_angle: 34.4110269160768
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70803c1bec01bfe03feb26edb60199e63f735dd3dedd85debf3f5a3563bff0e03ff55b62f7ceaee63f327f73ba65d5ddbfdac4c729b638e13fad86aef8d668e63f59ca9dd0f403debf412453b2f806e13f2f04aab90953e63f345d80f16cb4debf
+    datetime_begin: !butler_time/tai/iso '2024-11-12 02:11:24.465019405'
+    datetime_end: !butler_time/tai/iso '2024-11-12 02:11:54.906000000'
+  - instrument: LSSTComCam
+    id: 2024111600297
+    day_obs: 20241116
+    physical_filter: r_03
+    name: CC_O_20241116_000297
+    seq_num: 297
+    exposure_time: 30.0
+    target_name: ECDFS
+    observation_reason: science
+    science_program: BLOCK-320
+    azimuth: 259.49364869754
+    zenith_angle: 44.3090643043601
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 702e5b41e819f2e03f48870cf556b4e63f3210fc7477c1ddbf8be9e07f013ae13fe6884c51d16de63fcbef279b17f2ddbfcbc63cf0e507e13f2b23e11beb58e63f6800bc583ca1debf9476865afebfe03f6912dbbe709fe63fd61392309c70debf
+    datetime_begin: !butler_time/tai/iso '2024-11-17 07:53:44.975010753'
+    datetime_end: !butler_time/tai/iso '2024-11-17 07:54:15.416000000'
+  - instrument: LSSTComCam
+    id: 2024111900082
+    day_obs: 20241119
+    physical_filter: r_03
+    name: CC_O_20241119_000082
+    seq_num: 82
+    exposure_time: 30.0
+    target_name: ECDFS
+    observation_reason: science
+    science_program: BLOCK-320
+    azimuth: 98.5069126258241
+    zenith_angle: 39.4806598105826
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70d59cead7a0a1e03f538ef8aeded1e63fff0806e32e1cdebf02d1fc20a2f3e03fab7c2fb983bce63f94a1d651f4a4ddbff1fe9c319413e13fe12992a4df76e63f13eed695bc2edebff55952e992c1e03f77f41d9b3a8ce63f8c0eff22f7a5debf
+    datetime_begin: !butler_time/tai/iso '2024-11-20 01:17:58.894999623'
+    datetime_end: !butler_time/tai/iso '2024-11-20 01:18:29.327000000'
+  - instrument: LSSTComCam
+    id: 2024112000208
+    day_obs: 20241120
+    physical_filter: r_03
+    name: CC_O_20241120_000208
+    seq_num: 208
+    exposure_time: 30.0
+    target_name: ECDFS
+    observation_reason: science
+    science_program: BLOCK-320
+    azimuth: 269.9746103049828
+    zenith_angle: 21.006798364862703
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70d7e0b2c5f81be13f64010d029093e63f802d8ff361c5ddbf290bf958ad0fe13fa01a365be960e63f3988114f7878debf36235c3713b9e03ffff09d48c195e63f99ed7a90789cdebf202d41a55ec5e03f249fd5ed67c8e63fec35343762e9ddbf
+    datetime_begin: !butler_time/tai/iso '2024-11-21 05:50:26.511982083'
+    datetime_end: !butler_time/tai/iso '2024-11-21 05:50:56.955000000'
+  - instrument: LSSTComCam
+    id: 2024112800140
+    day_obs: 20241128
+    physical_filter: r_03
+    name: CC_O_20241128_000140
+    seq_num: 140
+    exposure_time: 30.0
+    target_name: ECDFS
+    observation_reason: science
+    science_program: BLOCK-320
+    azimuth: 93.2900437040759
+    zenith_angle: 27.623587832847797
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7027848ab9bbcbe03fff085678fa89e63f369700d15396debfb50be1afb5c4e03f48003b7ceec6e63f026f87535aefddbf34f05186d11be13f3488b4b63b9ee63f21dc220245a5ddbf53e1808ed722e13f982467b44761e63fd0092a7e3e4cdebf
+    datetime_begin: !butler_time/tai/iso '2024-11-29 01:36:53.677015901'
+    datetime_end: !butler_time/tai/iso '2024-11-29 01:37:24.113000000'
+  - instrument: LSSTComCam
+    id: 2024120600098
+    day_obs: 20241206
+    physical_filter: r_03
+    name: CC_O_20241206_000098
+    seq_num: 98
+    exposure_time: 30.0
+    target_name: ECDFS
+    observation_reason: science
+    science_program: BLOCK-320
+    azimuth: 79.4568936735704
+    zenith_angle: 9.344684850111406
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 706ade2cd5e7b6e03fd08d290209aae63fd202e0050f65debf41d0ee5dfcf7e03fed55153f11afe63fd51340ee22c4ddbfc1d06384b132e13f7560999f1366e63f3d68020efa19debf1a0fbafb9cf1e03f435ce7630b61e63f3e38c521e6badebf
+    datetime_begin: !butler_time/tai/iso '2024-12-07 02:29:41.701996922'
+    datetime_end: !butler_time/tai/iso '2024-12-07 02:30:12.144000000'
+- type: dimension
+  element: visit_definition
+  records:
+  - instrument: LSSTComCam
+    exposure: 2024111100094
+    visit: 2024111100094
+  - instrument: LSSTComCam
+    exposure: 2024111600297
+    visit: 2024111600297
+  - instrument: LSSTComCam
+    exposure: 2024111900082
+    visit: 2024111900082
+  - instrument: LSSTComCam
+    exposure: 2024112000208
+    visit: 2024112000208
+  - instrument: LSSTComCam
+    exposure: 2024112800140
+    visit: 2024112800140
+  - instrument: LSSTComCam
+    exposure: 2024120600098
+    visit: 2024120600098
+- type: dimension
+  element: visit_detector_region
+  records:
+  - instrument: LSSTComCam
+    detector: 0
+    visit: 2024111100094
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70f8b91e915fdfe03f1f3588d93ea7e63f413b6fa38313debf3f5a3563bff0e03ff55b62f7ceaee63f327f73ba65d5ddbf4c0a80dfd309e13f0e8c8f479796e63f8ce45a91bfe5ddbf8ab90f5073f8e03fc8c894050a8fe63f4d00a668d623debf
+  - instrument: LSSTComCam
+    detector: 3
+    visit: 2024111100094
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 703de350beebf6e03f1ee5ce5c8590e63fb574b84cd822debf8c12e8364c08e13f72cd95c51298e63f31f29333c1e4ddbf073aa4cc4b21e13f54ce5e9ec47fe63f3cc0a893edf4ddbfa5ad2c1ee90fe13f7aeee85b3978e63f16794c3e0333debf
+  - instrument: LSSTComCam
+    detector: 3
+    visit: 2024111900082
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70d4ed3abc69e1e03f54af6ff57dade63fcdce9b2012fcddbfd47e0c6f1efee03f13df21ede4a5e63f10ba83a411d2ddbf7220f7463709e13f766b39ecb38de63f2856684bee01debfa67a0f9981ece03fcd7a2f184f95e63f2d7eab8bea2bdebf
+  - instrument: LSSTComCam
+    detector: 3
+    visit: 2024120600098
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7042e163e271f4e03f7df8d3ebae95e63f13cdc5aef118debffa3afe1d350be13f5ddd335c5997e63f6a652e214fe0ddbfd838abd8991fe13f25581478fe7de63f319cd1b420feddbf747879cfd408e13f11adc145567ce63fd6dd009fc036debf
+  - instrument: LSSTComCam
+    detector: 4
+    visit: 2024111600297
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 704f0b4ac43cf9e03fec09cfb9d496e63f284a3b40ae0adebf8e3a42517712e13f0b971b5d167ee63fa8953ddabd1bdebf410b14d81001e13fc742cd75d476e63fd8cd9cc58f58debf0a3e554bd6e7e03fba7a69d2928fe63f8aaf5e2b8047debf
+  - instrument: LSSTComCam
+    detector: 4
+    visit: 2024112000208
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70e191c13fdefbe03fc07bc8409294e63f4f289d3e870bdebfe995a4ee8df7e03f17edc1bacc82e63ff415220e5d4adebf97d5ef2c7bd9e03f50602c692695e63f4caeb179dd56debf7ae92f7ecbdde03f833b02efeba6e63faacc6faa0718debf
+  - instrument: LSSTComCam
+    detector: 4
+    visit: 2024112800140
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 708d5d18f608e6e03fa37c0555ae90e63f818e22313948debfbed1a31892e3e03fb607ce3511a6e63fcce1ad5ca30ddebf003bf3e4d101e13f901f5235ef97e63f54e66280e9f3ddbf17613bc24804e13f6a62b9548c82e63f062eac547f2edebf
+  - instrument: LSSTComCam
+    detector: 4
+    visit: 2024120600098
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70d63cd93357dfe03f3b377c410c94e63f5fdddd5b1d4ddebf218172c62cf6e03fea3b3a40d095e63f0a743a28a714debf1c70dfc48f0ae13f5e7f9584777ce63f99bdd9317632debf1a024932baf3e03fd247fc85b37ae63f86230965ec6adebf
+  - instrument: LSSTComCam
+    detector: 5
+    visit: 2024111600297
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70d15f1393d6e1e03fa2b906c59bade63fc60d8ecec2faddbfe406b4b927fbe03f0bdfe5f0f494e63f701ac23afb0bdebf440b884fc1e9e03fed7eae0fb38de63f10752df2cc48debfa749279f6ed0e03f0dae643f59a6e63fbf1bd7e69937debf
+  - instrument: LSSTComCam
+    detector: 5
+    visit: 2024112000208
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70506c1721c9ffe03f6f6573ece5a4e63f5cee887a4bd1ddbf89c706258bfbe03f715590fc3993e63ff87cd3944d10debf4865077d78dde03f26b0319b93a5e63f9f8dfef5cd1cdebf5bfa4ed0b3e1e03fed57612a41b7e63f1d710af7ccddddbf
+  - instrument: LSSTComCam
+    detector: 6
+    visit: 2024111900082
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70c981429cd4ebe03ff8240646ca96e63f28cca41aff28debf9acd01278a08e13f8e332c412f8fe63f1c0144b502ffddbff1fe9c319413e13fe12992a4df76e63f13eed695bc2edebf27641d18dbf6e03f95f35f927d7ee63f5c454c6cb858debf
+  - instrument: LSSTComCam
+    detector: 7
+    visit: 2024112800140
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 700a54bd187002e13f45a013496a83e63f711640d51230debf8bcb1b3df9ffe03f9f21441bcd98e63fdebf73287df5ddbfd72896b8281ee13f595c1ac78f8ae63ffe4523369adbddbf1f9cf5ca9f20e13f4be27f182b75e63fd50061fc3416debf
+- type: dimension
+  element: visit_system_membership
+  records:
+  - instrument: LSSTComCam
+    visit_system: 0
+    visit: 2024111100094
+  - instrument: LSSTComCam
+    visit_system: 0
+    visit: 2024111600297
+  - instrument: LSSTComCam
+    visit_system: 0
+    visit: 2024111900082
+  - instrument: LSSTComCam
+    visit_system: 0
+    visit: 2024112000208
+  - instrument: LSSTComCam
+    visit_system: 0
+    visit: 2024112800140
+  - instrument: LSSTComCam
+    visit_system: 0
+    visit: 2024120600098
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/bfk.20240926a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/bias.20240926a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/dark.20240926a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/defects.20240926a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/flat-g.20240926a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/flat-i.20240926a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/flat-r.20240926a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizer.20240926a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/ptc.20240926a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47197/pseudoFlat/flat-i.20241028d
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47197/pseudoFlat/flat-r.20241028d
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47365/addManualDefects/defects.20241211a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47447/gainFixup/bias.20241107a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47447/gainFixup/dark.20241107a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47447/gainFixup/flat-g.20241107a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47447/gainFixup/flat-i.20241107a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47447/gainFixup/flat-r.20241107a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47447/gainFixup/ptc.20241107a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47498/fallbackFlats/flat-all.20241112a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47499/twiflat/flat-u.20241110a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47547/twiflat/flat-g.20241113a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47547/twiflat/flat-r.20241113a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47547/twiflat/flat-z.20241113a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-47741/twiflat/flat-y.20241120a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/bias.20250207a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/cti.20250207a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/dark.20250207a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/defects.20250207a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/flat-g.20250207a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/flat-i.20250207a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/flat-r.20250207a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/flat-u.20250207a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/flat-y.20250207a
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48520/DP1/flat-z.20250207a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48650
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48650/curated/19700101T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrection.20250224a
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTComCam/calib/curated
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/curated/19700101T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/calib/unbounded
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: dia_catalogs/apdb
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: fake-injection-catalog/fake_injection_catalog
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: fake-injection-catalog/fake_injection_catalog_sharded
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: pretrained_models/tac_cnn_comcam_2025-02-18
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: refcats/DM-49042/the_monster_20250219
+  doc: "Reference Catalog: the_monster_20250219 (version 2)\n##########################\n\
+    \nSky coverage: full sky\nNumber of sources: 1,811,709,771 (1.8 x 10^9)\nMagnitude\
+    \ range: 6.9 - 23.3 (LSST g magnitude)\nDisk space: 880 GB\nContact: Peter Ferguson,\
+    \ petersferguson@gmail.com, Slack: @Peter Ferguson\nTicket: DM-49042\nRFC: RFC-1047\n\
+    \nThe creation of the_monster refcat is described in detail in https://dmtn-277.lsst.io/.\
+    \ \nBriefly summarizing, this refcat is intended to be used during comissioning\
+    \ for the calibration of LSSTCam\nand LATISS data.\nThe rows of the catalog are\
+    \ all isolated sources from GaiaDR3. \nThe columns include all astrometry positions,\
+    \ proper motions and covariances from GaiaDR3.\nAdditionally, there are fluxes\
+    \ provided in ComCam (ugrizy), LASTISS (grizy), SDSS (u), and DES (grizy) bandpasses.\
+    \  \nThese fluxes are derived from a number of other reference catalogs as decribed\
+    \ in dmtn-277\n\nThis version differs from the 20240904 version in a few key ways:\n\
+    - The header metadata has been changed to be in line with science pipeline expectations\n\
+    - Color transformations to the LSSTComCam ITL system (empirical) have been added\n\
+    - A better absolute calibration has been achieved\n\n\nCitations/acknowledgements\n\
+    ==========================\n\nDMTN-277\n\nCatalog creation\n================\n\
+    This catalog was created by using : https://github.com/lsst-dm/the_monster \n\
+    following:\nhttps://pipelines.lsst.io/modules/lsst.meas.algorithms/creating-a-reference-catalog.html\n\
+    Ingestion was done on DM-49042\n\nUpdate with new commands:\n#butler register-dataset-type\
+    \ REPO the_monster_20240904 SimpleCatalog htm7\n#butler ingest-files -t direct\
+    \ /repo/main the_monster_20240904 refcats/DM-46370/the_monster_20240904 ./the_monster_20240904/the_monster_20240904.ecsv\n\
+    \n\n"
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: skymaps
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: sso/mpsky
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CHAINED
+  name: LSSTComCam/calib
+  children:
+  - LSSTComCam/calib/curated
+  - LSSTComCam/calib/DM-47499/twiflat/flat-u.20241110a
+  - LSSTComCam/calib/DM-48520/DP1/defects.20250207a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/dark.20240926a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/ptc.20240926a
+  - LSSTComCam/calib/DM-47547/twiflat/flat-z.20241113a
+  - LSSTComCam/calib/DM-48520/DP1/flat-y.20250207a
+  - LSSTComCam/calib/DM-47447/gainFixup/flat-i.20241107a
+  - LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrection.20250224a
+  - LSSTComCam/calib/DM-47447/gainFixup/dark.20241107a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/flat-g.20240926a
+  - LSSTComCam/calib/DM-48520/DP1/dark.20250207a
+  - LSSTComCam/calib/DM-47197/pseudoFlat/flat-i.20241028d
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/bias.20240926a
+  - LSSTComCam/calib/DM-48520/DP1/flat-z.20250207a
+  - LSSTComCam/calib/DM-47547/twiflat/flat-r.20241113a
+  - LSSTComCam/calib/DM-47447/gainFixup/flat-r.20241107a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/linearizer.20240926a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/flat-i.20240926a
+  - LSSTComCam/calib/DM-47447/gainFixup/ptc.20241107a
+  - LSSTComCam/calib/DM-48520/DP1/flat-i.20250207a
+  - LSSTComCam/calib/DM-48520/DP1/cti.20250207a
+  - LSSTComCam/calib/DM-47498/fallbackFlats/flat-all.20241112a
+  - LSSTComCam/calib/DM-47447/gainFixup/flat-g.20241107a
+  - LSSTComCam/calib/DM-47741/twiflat/flat-y.20241120a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/bfk.20240926a
+  - LSSTComCam/calib/DM-48650
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/flat-r.20240926a
+  - LSSTComCam/calib/DM-46360/isrTaskLSST/defects.20240926a
+  - LSSTComCam/calib/DM-48520/DP1/bias.20250207a
+  - LSSTComCam/calib/DM-48520/DP1/flat-g.20250207a
+  - LSSTComCam/calib/DM-48520/DP1/flat-r.20250207a
+  - LSSTComCam/calib/DM-47547/twiflat/flat-g.20241113a
+  - LSSTComCam/calib/DM-47197/pseudoFlat/flat-r.20241028d
+  - LSSTComCam/calib/DM-48520/DP1/flat-u.20250207a
+  - LSSTComCam/calib/DM-47447/gainFixup/bias.20241107a
+  - LSSTComCam/calib/DM-47365/addManualDefects/defects.20241211a
+- type: collection
+  collection_type: CHAINED
+  name: dia_catalogs
+  children:
+  - dia_catalogs/apdb
+- type: collection
+  collection_type: CHAINED
+  name: fake-injection-catalog
+  children:
+  - fake-injection-catalog/fake_injection_catalog_sharded
+  - fake-injection-catalog/fake_injection_catalog
+- type: collection
+  collection_type: CHAINED
+  name: models
+  children:
+  - pretrained_models/tac_cnn_comcam_2025-02-18
+- type: collection
+  collection_type: CHAINED
+  name: refcats
+  children:
+  - refcats/DM-49042/the_monster_20250219
+- type: collection
+  collection_type: CHAINED
+  name: sso
+  children:
+  - sso/mpsky
+- type: collection
+  collection_type: CHAINED
+  name: templates
+  children:
+  - LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z
+- type: collection
+  collection_type: CHAINED
+  name: LSSTComCam/defaults
+  children:
+  - templates
+  - skymaps
+  - LSSTComCam/calib
+  - refcats
+  - sso
+  - dia_catalogs
+  - models
+  - fake-injection-catalog
+- type: dataset_type
+  name: VisitDetectorFakeSourceCat
+  dimensions:
+  - band
+  - instrument
+  - day_obs
+  - detector
+  - physical_filter
+  - visit
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: VisitDetectorFakeSourceCat
+  run: fake-injection-catalog/fake_injection_catalog
+  records:
+  - dataset_id:
+    - !uuid '019edb97-e550-7bd2-a640-898fc36ae537'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      visit: 2024111100094
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241111/r/r_03/2024111100094/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024111100094_R22_S00_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-7f7d-8697-eca85e5a6af4'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      visit: 2024111100094
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241111/r/r_03/2024111100094/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024111100094_R22_S10_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-73a2-96bf-0a685aab7fb7'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      visit: 2024111600297
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241116/r/r_03/2024111600297/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024111600297_R22_S11_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-7cd2-b09f-f3ea6bcbeaff'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      visit: 2024111600297
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241116/r/r_03/2024111600297/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024111600297_R22_S12_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-7dae-aefa-598a5c6f5151'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      visit: 2024111900082
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241119/r/r_03/2024111900082/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024111900082_R22_S10_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-7753-bdce-dbfa93bca770'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      visit: 2024111900082
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241119/r/r_03/2024111900082/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024111900082_R22_S20_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-79e6-a6b8-b8f6774d060c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      visit: 2024112000208
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241120/r/r_03/2024112000208/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024112000208_R22_S11_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e550-71b3-98ec-f8ffef43986a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      visit: 2024112000208
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241120/r/r_03/2024112000208/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024112000208_R22_S12_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-780a-a3a5-953bac35e4e1'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      visit: 2024112800140
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241128/r/r_03/2024112800140/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024112800140_R22_S11_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e550-78eb-85cc-c81b885d1919'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      visit: 2024112800140
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241128/r/r_03/2024112800140/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024112800140_R22_S21_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e550-7c6e-8a14-20391b0fd2c0'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      visit: 2024120600098
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241206/r/r_03/2024120600098/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024120600098_R22_S10_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb97-e551-702a-a688-7213e6f46c42'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      visit: 2024120600098
+    path: fake-injection-catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20241206/r/r_03/2024120600098/VisitDetectorFakeSourceCat_LSSTComCam_r_r_03_2024120600098_R22_S11_fake-injection-catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: bias
+  run: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z
+  records:
+  - dataset_id:
+    - !uuid '525b37f8-9906-400e-8b96-eed277577a85'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z/bias/bias_LSSTComCam_R22_S00_LSSTComCam_calib_DM-46360_isrTaskLSST_biasGen_20240926a_20240927T212215Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '527b13b0-96c8-4e6c-a5e1-43a5f908b96a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z/bias/bias_LSSTComCam_R22_S10_LSSTComCam_calib_DM-46360_isrTaskLSST_biasGen_20240926a_20240927T212215Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e40a8760-ad82-4fd7-acff-5281cc1e774f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z/bias/bias_LSSTComCam_R22_S11_LSSTComCam_calib_DM-46360_isrTaskLSST_biasGen_20240926a_20240927T212215Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '54e1afb1-1a55-4836-bb03-933416e89024'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z/bias/bias_LSSTComCam_R22_S12_LSSTComCam_calib_DM-46360_isrTaskLSST_biasGen_20240926a_20240927T212215Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'da20334f-9b0a-4184-81ef-7e8c9c3ab8c5'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z/bias/bias_LSSTComCam_R22_S20_LSSTComCam_calib_DM-46360_isrTaskLSST_biasGen_20240926a_20240927T212215Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'f9f6c0fd-03a7-4d17-be2d-277299199f80'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/biasGen.20240926a/20240927T212215Z/bias/bias_LSSTComCam_R22_S21_LSSTComCam_calib_DM-46360_isrTaskLSST_biasGen_20240926a_20240927T212215Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: bias
+  run: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z
+  records:
+  - dataset_id:
+    - !uuid '4fa5a299-076e-47fc-b2c3-36628c92a8a2'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z/bias/bias_LSSTComCam_R22_S00_LSSTComCam_calib_DM-47447_gainFixup_biasGen_20241107a_20241107T194536Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'a72b4e0a-50bb-4ff9-9529-54dc8829bf8c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z/bias/bias_LSSTComCam_R22_S10_LSSTComCam_calib_DM-47447_gainFixup_biasGen_20241107a_20241107T194536Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '021c5930-49a7-49bc-95b0-b4f19fee68d9'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z/bias/bias_LSSTComCam_R22_S11_LSSTComCam_calib_DM-47447_gainFixup_biasGen_20241107a_20241107T194536Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '34505e75-b5d2-4c84-aa63-85a634a47f40'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z/bias/bias_LSSTComCam_R22_S12_LSSTComCam_calib_DM-47447_gainFixup_biasGen_20241107a_20241107T194536Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '401ef61c-481c-4991-bd8f-327525199e81'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z/bias/bias_LSSTComCam_R22_S20_LSSTComCam_calib_DM-47447_gainFixup_biasGen_20241107a_20241107T194536Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '38df50bb-c98f-426d-b2fc-16057e37a336'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-47447/gainFixup/biasGen.20241107a/20241107T194536Z/bias/bias_LSSTComCam_R22_S21_LSSTComCam_calib_DM-47447_gainFixup_biasGen_20241107a_20241107T194536Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: bias
+  run: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z
+  records:
+  - dataset_id:
+    - !uuid '613798c1-2050-4d01-a4f3-a46a4618d5d9'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z/bias/bias_LSSTComCam_R22_S00_LSSTComCam_calib_DM-48520_DP1_biasGen_20250207a_20250208T185010Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '3265d617-5bee-404e-b625-f0388022826c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z/bias/bias_LSSTComCam_R22_S10_LSSTComCam_calib_DM-48520_DP1_biasGen_20250207a_20250208T185010Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '7ad26651-ee13-44a4-a2c8-36f5d29575e6'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z/bias/bias_LSSTComCam_R22_S11_LSSTComCam_calib_DM-48520_DP1_biasGen_20250207a_20250208T185010Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '06c99645-7bd1-4801-8166-df4b0a2292ff'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z/bias/bias_LSSTComCam_R22_S12_LSSTComCam_calib_DM-48520_DP1_biasGen_20250207a_20250208T185010Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '02368548-71dc-48b6-ba0a-2bec567b8253'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z/bias/bias_LSSTComCam_R22_S20_LSSTComCam_calib_DM-48520_DP1_biasGen_20250207a_20250208T185010Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '93e78869-f939-45e2-9058-29e38a0c2562'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-48520/DP1/biasGen.20250207a/20250208T185010Z/bias/bias_LSSTComCam_R22_S21_LSSTComCam_calib_DM-48520_DP1_biasGen_20250207a_20250208T185010Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: camera
+  dimensions:
+  - instrument
+  storage_class: Camera
+  is_calibration: true
+- type: dataset
+  dataset_type: camera
+  run: LSSTComCam/calib/unbounded
+  records:
+  - dataset_id:
+    - !uuid '019e9bd2-59e5-7a72-a4b8-b62f6915f62e'
+    data_id:
+    - instrument: LSSTComCam
+    path: LSSTComCam/calib/unbounded/camera/camera_LSSTComCam_LSSTComCam_calib_unbounded.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: crosstalk
+  dimensions:
+  - instrument
+  - detector
+  storage_class: CrosstalkCalib
+  is_calibration: true
+- type: dataset
+  dataset_type: crosstalk
+  run: LSSTComCam/calib/DM-48650/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '711f7c84-2597-4788-bd1d-f014fe41568c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-48650/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S00_LSSTComCam_calib_DM-48650_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4ef74624-ebce-4b27-bf03-56f7eebffce3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-48650/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S10_LSSTComCam_calib_DM-48650_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'efa43fde-51e0-4dda-a8d1-577b6e9cc395'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-48650/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S11_LSSTComCam_calib_DM-48650_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '37c227ab-5a1e-4b5a-9133-64a769a65ada'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-48650/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S12_LSSTComCam_calib_DM-48650_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '048ac9b8-e863-44d1-b1cc-8ea39bc1a1f1'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-48650/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S20_LSSTComCam_calib_DM-48650_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'aab5170b-2900-4387-bc21-c8cbe06e7681'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-48650/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S21_LSSTComCam_calib_DM-48650_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: crosstalk
+  dimensions:
+  - instrument
+  - detector
+  storage_class: CrosstalkCalib
+  is_calibration: true
+- type: dataset
+  dataset_type: crosstalk
+  run: LSSTComCam/calib/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '019e9bd2-5d70-73b2-8077-9b3630600dbc'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S00_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5d43-72f5-b99a-0fd0752f0c76'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 1
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S01_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5d88-75fd-8686-09fec94b7f75'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 2
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S02_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5d5b-716a-b40d-bd573eb1ddf4'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S10_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5db4-757c-b97e-224a6e488c03'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S11_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5d0a-7b33-9a9f-fc8e5c279bd7'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S12_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5d2f-7bbb-95d2-236461f8286b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S20_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5cd8-7115-8b53-f1147c967c6a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S21_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5d9d-7f6e-a8ad-bd23f583a928'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 8
+    path: LSSTComCam/calib/curated/19700101T000000Z/crosstalk/crosstalk_LSSTComCam_R22_S22_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: cti
+  dimensions:
+  - instrument
+  - detector
+  storage_class: IsrCalib
+  is_calibration: true
+- type: dataset
+  dataset_type: cti
+  run: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z
+  records:
+  - dataset_id:
+    - !uuid 'b6063f80-06f5-4de0-89ee-9b29c3871c9a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z/cti/cti_LSSTComCam_R22_S00_LSSTComCam_calib_DM-48520_DP1_ctiGen_20250207a_20250208T011014Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8b59403f-eb9e-47d7-8b0c-5455067d3482'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z/cti/cti_LSSTComCam_R22_S10_LSSTComCam_calib_DM-48520_DP1_ctiGen_20250207a_20250208T011014Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4397f3bc-3a68-44a6-9868-a9b7ca0722de'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z/cti/cti_LSSTComCam_R22_S11_LSSTComCam_calib_DM-48520_DP1_ctiGen_20250207a_20250208T011014Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '24b632e7-9431-4c4e-a80c-0b99aad8547c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z/cti/cti_LSSTComCam_R22_S12_LSSTComCam_calib_DM-48520_DP1_ctiGen_20250207a_20250208T011014Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '022ba362-1837-46b5-841a-343a7b5d0238'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z/cti/cti_LSSTComCam_R22_S20_LSSTComCam_calib_DM-48520_DP1_ctiGen_20250207a_20250208T011014Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4969690d-f01e-473a-b31d-d3f527176463'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-48520/DP1/ctiGen.20250207a/20250208T011014Z/cti/cti_LSSTComCam_R22_S21_LSSTComCam_calib_DM-48520_DP1_ctiGen_20250207a_20250208T011014Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: dark
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: dark
+  run: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z
+  records:
+  - dataset_id:
+    - !uuid '0207201d-3900-4667-9e6c-51f07b97fa82'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z/dark/dark_LSSTComCam_R22_S00_LSSTComCam_calib_DM-46360_isrTaskLSST_darkGen_20240926a_20240927T213944Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '3eda60d5-1375-4f39-92e5-4ecb939376fc'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z/dark/dark_LSSTComCam_R22_S10_LSSTComCam_calib_DM-46360_isrTaskLSST_darkGen_20240926a_20240927T213944Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '1184d08d-04e1-45e7-b6f0-d74b5849c06a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z/dark/dark_LSSTComCam_R22_S11_LSSTComCam_calib_DM-46360_isrTaskLSST_darkGen_20240926a_20240927T213944Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '94f60f42-61ef-46e8-8a6f-3687b7309ac6'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z/dark/dark_LSSTComCam_R22_S12_LSSTComCam_calib_DM-46360_isrTaskLSST_darkGen_20240926a_20240927T213944Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '14a36d62-72fe-4c2d-b345-46452334c252'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z/dark/dark_LSSTComCam_R22_S20_LSSTComCam_calib_DM-46360_isrTaskLSST_darkGen_20240926a_20240927T213944Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '3127a4c7-0f91-4970-bdf6-2fda7e038719'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/darkGen.20240926a/20240927T213944Z/dark/dark_LSSTComCam_R22_S21_LSSTComCam_calib_DM-46360_isrTaskLSST_darkGen_20240926a_20240927T213944Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: dark
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: dark
+  run: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z
+  records:
+  - dataset_id:
+    - !uuid 'a0fb0176-1c08-4205-8bd6-f2c799d31e16'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z/dark/dark_LSSTComCam_R22_S00_LSSTComCam_calib_DM-47447_gainFixup_darkGen_20241107a_20241107T200820Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '70e2d442-d6b7-40bc-bef8-72940f557403'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z/dark/dark_LSSTComCam_R22_S10_LSSTComCam_calib_DM-47447_gainFixup_darkGen_20241107a_20241107T200820Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '90cb6169-9059-4d27-825e-1029c8e23906'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z/dark/dark_LSSTComCam_R22_S11_LSSTComCam_calib_DM-47447_gainFixup_darkGen_20241107a_20241107T200820Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '6762511b-45b9-479b-8c96-31b7f80f5f2b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z/dark/dark_LSSTComCam_R22_S12_LSSTComCam_calib_DM-47447_gainFixup_darkGen_20241107a_20241107T200820Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'a270c533-45e7-4554-a01c-96b5efe8870b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z/dark/dark_LSSTComCam_R22_S20_LSSTComCam_calib_DM-47447_gainFixup_darkGen_20241107a_20241107T200820Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '9d0f7592-9e44-46e3-b9e7-2ea2064f4fba'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-47447/gainFixup/darkGen.20241107a/20241107T200820Z/dark/dark_LSSTComCam_R22_S21_LSSTComCam_calib_DM-47447_gainFixup_darkGen_20241107a_20241107T200820Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: dark
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: dark
+  run: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z
+  records:
+  - dataset_id:
+    - !uuid '55ff5c0c-0192-4149-8c60-601238981cf3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z/dark/dark_LSSTComCam_R22_S00_LSSTComCam_calib_DM-48520_DP1_darkGen_20250207a_20250208T210026Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'b7b11f84-5f63-4688-a3d2-4a67bb42726d'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z/dark/dark_LSSTComCam_R22_S10_LSSTComCam_calib_DM-48520_DP1_darkGen_20250207a_20250208T210026Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '777e2e23-031c-49c3-9a33-c3079340acfb'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z/dark/dark_LSSTComCam_R22_S11_LSSTComCam_calib_DM-48520_DP1_darkGen_20250207a_20250208T210026Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '3c85a317-c76d-4ddf-a0df-4e8d91fbbdf4'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z/dark/dark_LSSTComCam_R22_S12_LSSTComCam_calib_DM-48520_DP1_darkGen_20250207a_20250208T210026Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '7da547d0-6145-4510-936b-fea348de284e'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z/dark/dark_LSSTComCam_R22_S20_LSSTComCam_calib_DM-48520_DP1_darkGen_20250207a_20250208T210026Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'b3035ce1-ae50-4a20-95de-9451cdde44a8'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-48520/DP1/darkGen.20250207a/20250208T210026Z/dark/dark_LSSTComCam_R22_S21_LSSTComCam_calib_DM-48520_DP1_darkGen_20250207a_20250208T210026Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: defects
+  dimensions:
+  - instrument
+  - detector
+  storage_class: Defects
+  is_calibration: true
+- type: dataset
+  dataset_type: defects
+  run: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z
+  records:
+  - dataset_id:
+    - !uuid 'a95d8d7f-e0a7-4b96-b806-fc6a215bc8a1'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z/defects/defects_LSSTComCam_R22_S00_LSSTComCam_calib_DM-46360_isrTaskLSST_defectGen_20240926a_20240926T233116Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c13c233f-61a4-474f-b524-4d62f543f0c0'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z/defects/defects_LSSTComCam_R22_S10_LSSTComCam_calib_DM-46360_isrTaskLSST_defectGen_20240926a_20240926T233116Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '163e9151-3dfd-43f5-b28c-e86b8c5ce734'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z/defects/defects_LSSTComCam_R22_S11_LSSTComCam_calib_DM-46360_isrTaskLSST_defectGen_20240926a_20240926T233116Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'fd69b2a3-cf57-4ba5-92a8-b9830cc8d14b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z/defects/defects_LSSTComCam_R22_S12_LSSTComCam_calib_DM-46360_isrTaskLSST_defectGen_20240926a_20240926T233116Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '56723971-2a6d-480b-9ce9-b226ea65bf11'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z/defects/defects_LSSTComCam_R22_S20_LSSTComCam_calib_DM-46360_isrTaskLSST_defectGen_20240926a_20240926T233116Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c1750962-ae65-45b9-a0cf-200727b21457'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/defectGen.20240926a/20240926T233116Z/defects/defects_LSSTComCam_R22_S21_LSSTComCam_calib_DM-46360_isrTaskLSST_defectGen_20240926a_20240926T233116Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: defects
+  dimensions:
+  - instrument
+  - detector
+  storage_class: Defects
+  is_calibration: true
+- type: dataset
+  dataset_type: defects
+  run: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z
+  records:
+  - dataset_id:
+    - !uuid 'f636f05d-5f14-44ef-b0a8-d29f1ea68d04'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z/defects/defects_LSSTComCam_R22_S00_LSSTComCam_calib_DM-47365_addManualDefects_defectsGen_20241121c_20241211T235712Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'df5f089f-a401-4e69-805c-3f28c35c3620'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z/defects/defects_LSSTComCam_R22_S10_LSSTComCam_calib_DM-47365_addManualDefects_defectsGen_20241121c_20241211T235712Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ffb384ff-76de-4f56-9a9c-f751d0b61166'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z/defects/defects_LSSTComCam_R22_S11_LSSTComCam_calib_DM-47365_addManualDefects_defectsGen_20241121c_20241211T235712Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ea28810d-ff8a-4cca-9d71-a35be9c25fa0'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z/defects/defects_LSSTComCam_R22_S12_LSSTComCam_calib_DM-47365_addManualDefects_defectsGen_20241121c_20241211T235712Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a15f2975-8701-4ca4-b818-a18d220c11cd'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z/defects/defects_LSSTComCam_R22_S20_LSSTComCam_calib_DM-47365_addManualDefects_defectsGen_20241121c_20241211T235712Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '14ffcacc-9346-4df8-977f-a55968ed0c63'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-47365/addManualDefects/defectsGen.20241121c/20241211T235712Z/defects/defects_LSSTComCam_R22_S21_LSSTComCam_calib_DM-47365_addManualDefects_defectsGen_20241121c_20241211T235712Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: defects
+  dimensions:
+  - instrument
+  - detector
+  storage_class: Defects
+  is_calibration: true
+- type: dataset
+  dataset_type: defects
+  run: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z
+  records:
+  - dataset_id:
+    - !uuid '1a4dc667-8319-43f5-931f-e7c1a326ef08'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z/defects/defects_LSSTComCam_R22_S00_LSSTComCam_calib_DM-48520_DP1_defectGen_20250207a_20250208T010419Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ccbdaf46-5c0c-4387-82f5-9a905d040b8d'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z/defects/defects_LSSTComCam_R22_S10_LSSTComCam_calib_DM-48520_DP1_defectGen_20250207a_20250208T010419Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8d6470f2-aa55-4e25-a3fe-1932c792c815'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z/defects/defects_LSSTComCam_R22_S11_LSSTComCam_calib_DM-48520_DP1_defectGen_20250207a_20250208T010419Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd54f2c2b-e9cf-45f7-8386-379738e21563'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z/defects/defects_LSSTComCam_R22_S12_LSSTComCam_calib_DM-48520_DP1_defectGen_20250207a_20250208T010419Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8d8118ff-4145-47dd-b6bd-46d25f1adf93'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z/defects/defects_LSSTComCam_R22_S20_LSSTComCam_calib_DM-48520_DP1_defectGen_20250207a_20250208T010419Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9104bb34-d9ee-42fd-afa6-c2e5410bf256'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-48520/DP1/defectGen.20250207a/20250208T010419Z/defects/defects_LSSTComCam_R22_S21_LSSTComCam_calib_DM-48520_DP1_defectGen_20250207a_20250208T010419Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z
+  records:
+  - dataset_id:
+    - !uuid '7859a883-9a9e-4c05-9ace-828d53e7f641'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-46360_isrTaskLSST_flatGen-r_20240926a_20240927T232432Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '14f58f8e-5c28-4ce9-bdca-0b811050846e'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-46360_isrTaskLSST_flatGen-r_20240926a_20240927T232432Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '07285f4a-27f5-46ed-84e1-46b06e275fe3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-46360_isrTaskLSST_flatGen-r_20240926a_20240927T232432Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '74c97de7-d290-4603-8953-c900cd9c830c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-46360_isrTaskLSST_flatGen-r_20240926a_20240927T232432Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'bcd819db-82e9-4af2-bd99-809fddecf56a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-46360_isrTaskLSST_flatGen-r_20240926a_20240927T232432Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '7eeea6e5-0fa2-4468-a81a-72427a19c17a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/flatGen-r.20240926a/20240927T232432Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-46360_isrTaskLSST_flatGen-r_20240926a_20240927T232432Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run
+  records:
+  - dataset_id:
+    - !uuid 'a3ab14f8-4e63-425a-b12d-2e350eb66bb4'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-47197_pseudoFlat_flatGen-r_20241028d_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '6fc9800f-3497-47e3-8a57-669636063517'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-47197_pseudoFlat_flatGen-r_20241028d_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '1a3f8e44-d45e-44bf-b579-c7f15f81e9ab'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-47197_pseudoFlat_flatGen-r_20241028d_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '75179eff-74f9-4846-8331-ebcbfa24542f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-47197_pseudoFlat_flatGen-r_20241028d_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'fa7ca46b-3b1f-4a2e-98c7-9d4ed02c5caa'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-47197_pseudoFlat_flatGen-r_20241028d_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '7991732b-3e34-4966-9697-ad4b3042ea03'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47197/pseudoFlat/flatGen-r.20241028d/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-47197_pseudoFlat_flatGen-r_20241028d_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z
+  records:
+  - dataset_id:
+    - !uuid '6f50af82-d7be-4991-8b16-c38c6484118c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-47447_gainFixup_flatGen-r_20241107a_20241107T213628Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '739a4f4d-e88e-4b00-bf39-2de7a6e9a111'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-47447_gainFixup_flatGen-r_20241107a_20241107T213628Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '60db3e46-b638-45be-b784-6fd5715995aa'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-47447_gainFixup_flatGen-r_20241107a_20241107T213628Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'cc954ee4-6d01-464b-902c-52d9d07849cd'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-47447_gainFixup_flatGen-r_20241107a_20241107T213628Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'f1f7c9fb-798f-4586-858f-c5614c6b0ef3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-47447_gainFixup_flatGen-r_20241107a_20241107T213628Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '793e325e-feb1-479f-9e1a-101592e16413'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47447/gainFixup/flatGen-r.20241107a/20241107T213628Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-47447_gainFixup_flatGen-r_20241107a_20241107T213628Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run
+  records:
+  - dataset_id:
+    - !uuid '83981ef9-c1f2-46a2-b72d-5818b75b2277'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-47498_fallbackFlats_flat_20241112a_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '0bcd5e48-caa9-4c58-aad9-d2f1b604f0c3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-47498_fallbackFlats_flat_20241112a_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '432a94ef-a316-4df7-8e52-43aa11710024'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-47498_fallbackFlats_flat_20241112a_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'f80ade6c-6c25-47c2-b43d-62593329c01f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-47498_fallbackFlats_flat_20241112a_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '4fc3a385-df60-4f2c-a7dc-abce3c13a66a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-47498_fallbackFlats_flat_20241112a_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'd4509e6a-e188-466e-9396-9bd53254281e'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47498/fallbackFlats/flat.20241112a/run/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-47498_fallbackFlats_flat_20241112a_run.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z
+  records:
+  - dataset_id:
+    - !uuid 'cac7df40-6451-446d-9cd7-858d38bfd047'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-47547_twiflat_flatGen-r_20241113a_20241113T222821Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'deade323-c728-4ed5-ae84-eaf40aff2a53'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-47547_twiflat_flatGen-r_20241113a_20241113T222821Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '7eaad056-e811-4b3f-a444-ef0f8f81f9e7'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-47547_twiflat_flatGen-r_20241113a_20241113T222821Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '58989214-1950-48ac-a1ed-a35a8940c8ad'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-47547_twiflat_flatGen-r_20241113a_20241113T222821Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e3f08369-066b-4b4f-bfea-656b5d2f4f06'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-47547_twiflat_flatGen-r_20241113a_20241113T222821Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '02a913e5-d4ea-4d77-8cf3-80b9aa419ae0'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-47547/twiflat/flatGen-r.20241113a/20241113T222821Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-47547_twiflat_flatGen-r_20241113a_20241113T222821Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z
+  records:
+  - dataset_id:
+    - !uuid 'dfade34a-3413-4101-8d3e-54daa4ee7fd8'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-48520_DP1_flatGen-r_20250207a_20250209T212709Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '730f4228-faf5-49e7-bc47-c15d3f41c99d'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-48520_DP1_flatGen-r_20250207a_20250209T212709Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e2ce5081-3da3-41ad-8337-7036ed4e0f85'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-48520_DP1_flatGen-r_20250207a_20250209T212709Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '75eea43a-7ff4-42dd-81f9-3eb345152985'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-48520_DP1_flatGen-r_20250207a_20250209T212709Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'f99dcfe4-09b1-4428-ae5c-3bfd38650698'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-48520_DP1_flatGen-r_20250207a_20250209T212709Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '18dea195-d9de-4097-a721-f8d8ce4c6eb5'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48520/DP1/flatGen-r.20250207a/20250209T212709Z/flat/r/r_03/flat_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-48520_DP1_flatGen-r_20250207a_20250209T212709Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: illuminationCorrection
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: illuminationCorrection
+  run: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z
+  records:
+  - dataset_id:
+    - !uuid '3765abd3-5c59-4389-92a4-7c9de627fea5'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z/illuminationCorrection/r/r_03/illuminationCorrection_LSSTComCam_r_r_03_R22_S00_LSSTComCam_calib_DM-48955_illumCorr_illuminationCorrectionGen_20250224b_20250224T231646Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '96473c86-fe41-4506-b142-9a7158e4d982'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z/illuminationCorrection/r/r_03/illuminationCorrection_LSSTComCam_r_r_03_R22_S10_LSSTComCam_calib_DM-48955_illumCorr_illuminationCorrectionGen_20250224b_20250224T231646Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '6ee005f2-570e-4fce-9a84-f7b58c61113f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z/illuminationCorrection/r/r_03/illuminationCorrection_LSSTComCam_r_r_03_R22_S11_LSSTComCam_calib_DM-48955_illumCorr_illuminationCorrectionGen_20250224b_20250224T231646Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '717ae1f5-5122-4a56-963a-3c2d139bd71a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z/illuminationCorrection/r/r_03/illuminationCorrection_LSSTComCam_r_r_03_R22_S12_LSSTComCam_calib_DM-48955_illumCorr_illuminationCorrectionGen_20250224b_20250224T231646Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'fdf51650-cfd5-44f3-b6c1-3476e0918df4'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z/illuminationCorrection/r/r_03/illuminationCorrection_LSSTComCam_r_r_03_R22_S20_LSSTComCam_calib_DM-48955_illumCorr_illuminationCorrectionGen_20250224b_20250224T231646Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '544d3413-8c77-49d6-927f-c8593f1cec3e'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      physical_filter: r_03
+    path: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrectionGen.20250224b/20250224T231646Z/illuminationCorrection/r/r_03/illuminationCorrection_LSSTComCam_r_r_03_R22_S21_LSSTComCam_calib_DM-48955_illumCorr_illuminationCorrectionGen_20250224b_20250224T231646Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: injection_catalog
+  dimensions:
+  - band
+  - htm7
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: injection_catalog
+  run: fake-injection-catalog/fake_injection_catalog_sharded
+  records:
+  - dataset_id:
+    - !uuid '019edb98-cc98-7c6f-91f7-c78973d4cfd1'
+    data_id:
+    - band: r
+      htm7: 147172
+    path: fake-injection-catalog/fake_injection_catalog_sharded/injection_catalog/r/injection_catalog_r_147172_fake-injection-catalog_fake_injection_catalog_sharded.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb98-ccc2-797e-be6d-9f052edeb4ff'
+    data_id:
+    - band: r
+      htm7: 147174
+    path: fake-injection-catalog/fake_injection_catalog_sharded/injection_catalog/r/injection_catalog_r_147174_fake-injection-catalog_fake_injection_catalog_sharded.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb98-ccd0-7c67-af3e-c495144bfe6a'
+    data_id:
+    - band: r
+      htm7: 147175
+    path: fake-injection-catalog/fake_injection_catalog_sharded/injection_catalog/r/injection_catalog_r_147175_fake-injection-catalog_fake_injection_catalog_sharded.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+- type: dataset_type
+  name: linearizer
+  dimensions:
+  - instrument
+  - detector
+  storage_class: Linearizer
+  is_calibration: true
+- type: dataset
+  dataset_type: linearizer
+  run: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z
+  records:
+  - dataset_id:
+    - !uuid 'ff177d36-2a2f-4860-814e-c8052ec93a9f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z/linearizer/linearizer_LSSTComCam_R22_S00_LSSTComCam_calib_DM-46360_isrTaskLSST_linearizerGen_20240926a_20240927T182910Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '29909abe-b42f-4c42-a6a1-e53ed1df0b96'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z/linearizer/linearizer_LSSTComCam_R22_S10_LSSTComCam_calib_DM-46360_isrTaskLSST_linearizerGen_20240926a_20240927T182910Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'bb771fc8-fdfc-48b1-98e7-2774ac6d80d4'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z/linearizer/linearizer_LSSTComCam_R22_S11_LSSTComCam_calib_DM-46360_isrTaskLSST_linearizerGen_20240926a_20240927T182910Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1beeede0-77d4-4080-be9d-76c6610c2e94'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z/linearizer/linearizer_LSSTComCam_R22_S12_LSSTComCam_calib_DM-46360_isrTaskLSST_linearizerGen_20240926a_20240927T182910Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '08616902-40f3-4016-9605-e0aa5ca7db44'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z/linearizer/linearizer_LSSTComCam_R22_S20_LSSTComCam_calib_DM-46360_isrTaskLSST_linearizerGen_20240926a_20240927T182910Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8a523438-9ecf-4103-9d79-2067437011aa'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizerGen.20240926a/20240927T182910Z/linearizer/linearizer_LSSTComCam_R22_S21_LSSTComCam_calib_DM-46360_isrTaskLSST_linearizerGen_20240926a_20240927T182910Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: manual_defects
+  dimensions:
+  - instrument
+  - detector
+  storage_class: Defects
+  is_calibration: true
+- type: dataset
+  dataset_type: manual_defects
+  run: LSSTComCam/calib/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '019e9bd2-5c1f-7a07-b2c5-fe56471cb97f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S00_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5c0b-72bb-9ff0-07d89b7ac9a3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 1
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S01_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5c41-7c44-b04a-6fd9510dbd2d'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 2
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S02_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5bd5-78ac-93ad-42f882716e31'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S10_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5bf0-7eb4-b89d-34a89b410781'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S11_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5bc4-7509-9fc9-291e6723af58'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S12_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5c59-7ebe-b9b3-cc52fa5a7823'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S20_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5b8c-7d1e-b4f1-58033dd56770'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S21_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5bab-7e20-8c24-4d80ddcba994'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 8
+    path: LSSTComCam/calib/curated/19700101T000000Z/manual_defects/manual_defects_LSSTComCam_R22_S22_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: preloaded_dia_forced_source
+  dimensions:
+  - instrument
+  - detector
+  - group
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: preloaded_dia_forced_source
+  run: dia_catalogs/apdb
+  records:
+  - dataset_id:
+    - !uuid '019edb71-adb4-7b53-9dee-b2f75141ad69'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      group: '2024-11-12T02:10:52.368'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-12T02_10_52.368/preloaded_dia_forced_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb71-adb4-73a6-8cb4-e76d5cab136d'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-12T02:10:52.368'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-12T02_10_52.368/preloaded_dia_forced_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb78-26d7-7611-a7b6-a2f33e8cc5ab'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-17T07:52:30.357'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-17T07_52_30.357/preloaded_dia_forced_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb78-26d7-70aa-99f2-5f82f18cd233'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-17T07:52:30.357'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-17T07_52_30.357/preloaded_dia_forced_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb7e-4787-76ce-87f7-cf046d7cab47'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-20T01:16:40.691'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-20T01_16_40.691/preloaded_dia_forced_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb7e-4787-7bed-ae9b-697866af4dab'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      group: '2024-11-20T01:16:40.691'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-20T01_16_40.691/preloaded_dia_forced_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb85-3710-7a57-8b0b-6a90359b4205'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-21T05:49:25.789'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-21T05_49_25.789/preloaded_dia_forced_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb85-370f-7004-b9c8-d6a5a139afe1'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-21T05:49:25.789'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-21T05_49_25.789/preloaded_dia_forced_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb8b-5957-7cb7-8cf9-ee4d942ab175'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-29T01:35:04.206'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-29T01_35_04.206/preloaded_dia_forced_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb8b-5956-7545-b948-726d911d1279'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      group: '2024-11-29T01:35:04.206'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-29T01_35_04.206/preloaded_dia_forced_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb91-8ca9-769a-b358-2f8e77077373'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-12-07T02:29:08.761'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-12-07T02_29_08.761/preloaded_dia_forced_source_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb91-8ca9-72c7-b481-42c0970f0a5d'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-12-07T02:29:08.761'
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-12-07T02_29_08.761/preloaded_dia_forced_source_LSSTComCam_2024-12-07T02_29_08_761_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+- type: dataset_type
+  name: preloaded_dia_object
+  dimensions:
+  - instrument
+  - detector
+  - group
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: preloaded_dia_object
+  run: dia_catalogs/apdb
+  records:
+  - dataset_id:
+    - !uuid '019edb71-adb4-77c8-9efe-6cc1c8d4978b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      group: '2024-11-12T02:10:52.368'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-12T02_10_52.368/preloaded_dia_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb71-adb4-7928-ac2f-949bae3aa589'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-12T02:10:52.368'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-12T02_10_52.368/preloaded_dia_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb78-26d7-7969-9e37-9186ed0e34bf'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-17T07:52:30.357'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-17T07_52_30.357/preloaded_dia_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb78-26d7-70c4-a767-bf8335b3e50f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-17T07:52:30.357'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-17T07_52_30.357/preloaded_dia_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb7e-4787-76ea-a9d6-f6835c21cb14'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-20T01:16:40.691'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-20T01_16_40.691/preloaded_dia_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb7e-4787-749d-a907-b514660e5db2'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      group: '2024-11-20T01:16:40.691'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-20T01_16_40.691/preloaded_dia_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb85-3710-760e-8ed8-4eb6cfdd40dc'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-21T05:49:25.789'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-21T05_49_25.789/preloaded_dia_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb85-370f-7065-ac2d-de5f096c5e2b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-21T05:49:25.789'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-21T05_49_25.789/preloaded_dia_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb8b-5957-7b3c-a175-9c08ee9e8504'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-29T01:35:04.206'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-29T01_35_04.206/preloaded_dia_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb8b-5956-70c5-8488-7d95fc3a80aa'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      group: '2024-11-29T01:35:04.206'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-11-29T01_35_04.206/preloaded_dia_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb91-8ca9-77a8-91f2-f18697866175'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-12-07T02:29:08.761'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-12-07T02_29_08.761/preloaded_dia_object_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb91-8ca9-79fa-b18d-012cb2013fd8'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-12-07T02:29:08.761'
+    path: dia_catalogs/apdb/preloaded_dia_object/2024-12-07T02_29_08.761/preloaded_dia_object_LSSTComCam_2024-12-07T02_29_08_761_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+- type: dataset_type
+  name: preloaded_dia_source
+  dimensions:
+  - instrument
+  - detector
+  - group
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: preloaded_dia_source
+  run: dia_catalogs/apdb
+  records:
+  - dataset_id:
+    - !uuid '019edb71-adb4-7eb1-bd48-3c3f577fdd79'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      group: '2024-11-12T02:10:52.368'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-12T02_10_52.368/preloaded_dia_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb71-adb4-72d9-af70-b14938260d1a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-12T02:10:52.368'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-12T02_10_52.368/preloaded_dia_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb78-26d7-7136-b24c-628905b4b8ff'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-17T07:52:30.357'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-17T07_52_30.357/preloaded_dia_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb78-26d7-772e-b43c-e8662b8cc179'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-17T07:52:30.357'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-17T07_52_30.357/preloaded_dia_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb7e-4787-7b6c-a7c9-7573d2281c9f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-20T01:16:40.691'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-20T01_16_40.691/preloaded_dia_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb7e-4787-7d6f-b5f7-1af2ee2e3579'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      group: '2024-11-20T01:16:40.691'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-20T01_16_40.691/preloaded_dia_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb85-3710-784f-8ed1-f8b171543f37'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-21T05:49:25.789'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-21T05_49_25.789/preloaded_dia_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb85-370f-70bf-a50e-2b0f7b5dd6b0'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-21T05:49:25.789'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-21T05_49_25.789/preloaded_dia_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb8b-5957-7ee7-aba7-32714739b9b6'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-29T01:35:04.206'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-29T01_35_04.206/preloaded_dia_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb8b-5956-72a5-a2ee-085e30dd563c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      group: '2024-11-29T01:35:04.206'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-11-29T01_35_04.206/preloaded_dia_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb91-8ca9-7846-a39d-7f7f9bfabb62'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-12-07T02:29:08.761'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-12-07T02_29_08.761/preloaded_dia_source_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019edb91-8ca9-78c0-b276-637c57248a88'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-12-07T02:29:08.761'
+    path: dia_catalogs/apdb/preloaded_dia_source/2024-12-07T02_29_08.761/preloaded_dia_source_LSSTComCam_2024-12-07T02_29_08_761_R22_S11_dia_catalogs_apdb.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+- type: dataset_type
+  name: preloaded_ss_object
+  dimensions:
+  - instrument
+  - detector
+  - group
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: preloaded_ss_object
+  run: sso/mpsky
+  records:
+  - dataset_id:
+    - !uuid '019e9be1-e023-7773-939a-c2cfe0865532'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+      group: '2024-11-12T02:10:52.368'
+    path: sso/mpsky/preloaded_ss_object/2024-11-12T02_10_52.368/preloaded_ss_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e04f-7594-bed2-bcc72d03d0ba'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-12T02:10:52.368'
+    path: sso/mpsky/preloaded_ss_object/2024-11-12T02_10_52.368/preloaded_ss_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e055-76d3-bf1b-64640ca6c294'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-17T07:52:30.357'
+    path: sso/mpsky/preloaded_ss_object/2024-11-17T07_52_30.357/preloaded_ss_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e05c-78b0-9d02-236c36c02f95'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-17T07:52:30.357'
+    path: sso/mpsky/preloaded_ss_object/2024-11-17T07_52_30.357/preloaded_ss_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e062-7df2-a964-b529d8af6ca6'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-11-20T01:16:40.691'
+    path: sso/mpsky/preloaded_ss_object/2024-11-20T01_16_40.691/preloaded_ss_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e068-79e0-b72d-0b48b95afba9'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+      group: '2024-11-20T01:16:40.691'
+    path: sso/mpsky/preloaded_ss_object/2024-11-20T01_16_40.691/preloaded_ss_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e06d-7a22-b3c6-a513bbafc842'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-21T05:49:25.789'
+    path: sso/mpsky/preloaded_ss_object/2024-11-21T05_49_25.789/preloaded_ss_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e074-7f9f-8588-1ce5ad001d2b'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+      group: '2024-11-21T05:49:25.789'
+    path: sso/mpsky/preloaded_ss_object/2024-11-21T05_49_25.789/preloaded_ss_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e087-7fde-bacb-92070d43d385'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-11-29T01:35:04.206'
+    path: sso/mpsky/preloaded_ss_object/2024-11-29T01_35_04.206/preloaded_ss_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e08e-70d3-b38a-1726d87ffd9e'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+      group: '2024-11-29T01:35:04.206'
+    path: sso/mpsky/preloaded_ss_object/2024-11-29T01_35_04.206/preloaded_ss_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e07a-7d09-bc7f-4bda2e7c9170'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+      group: '2024-12-07T02:29:08.761'
+    path: sso/mpsky/preloaded_ss_object/2024-12-07T02_29_08.761/preloaded_ss_object_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019e9be1-e081-710a-afec-06bc8d6034f2'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+      group: '2024-12-07T02:29:08.761'
+    path: sso/mpsky/preloaded_ss_object/2024-12-07T02_29_08.761/preloaded_ss_object_LSSTComCam_2024-12-07T02_29_08_761_R22_S11_sso_mpsky.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+- type: dataset_type
+  name: pretrainedModelPackage
+  dimensions: []
+  storage_class: NNModelPackagePayload
+  is_calibration: false
+- type: dataset
+  dataset_type: pretrainedModelPackage
+  run: pretrained_models/tac_cnn_comcam_2025-02-18
+  records:
+  - dataset_id:
+    - !uuid 'a83d850a-0094-417c-ac9c-64d0f7b98048'
+    data_id:
+    - {}
+    path: pretrained_models/tac_cnn_comcam_2025-02-18/pretrainedModelPackage/pretrainedModelPackage_pretrained_models_tac_cnn_comcam_2025-02-18.zip
+    formatter: lsst.meas.transiNet.modelPackages.formatters.NNModelPackageFormatter
+- type: dataset_type
+  name: ptc
+  dimensions:
+  - instrument
+  - detector
+  storage_class: PhotonTransferCurveDataset
+  is_calibration: true
+- type: dataset
+  dataset_type: ptc
+  run: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z
+  records:
+  - dataset_id:
+    - !uuid '23c98ed6-00fc-45e7-99bc-6d1ff66e0a1f'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z/ptc/ptc_LSSTComCam_R22_S00_LSSTComCam_calib_DM-46360_isrTaskLSST_ptcGen_20240926a_20240927T183452Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd430c4a3-f4fb-4e31-9d74-3a44170b7361'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z/ptc/ptc_LSSTComCam_R22_S10_LSSTComCam_calib_DM-46360_isrTaskLSST_ptcGen_20240926a_20240927T183452Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'eccc02aa-7e71-4ec0-a4a8-e14a4a2dbeb3'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z/ptc/ptc_LSSTComCam_R22_S11_LSSTComCam_calib_DM-46360_isrTaskLSST_ptcGen_20240926a_20240927T183452Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '2b710176-8518-4643-a55e-9d3d18a29f18'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z/ptc/ptc_LSSTComCam_R22_S12_LSSTComCam_calib_DM-46360_isrTaskLSST_ptcGen_20240926a_20240927T183452Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '047119ae-8be5-4d70-947e-e0efa236daf5'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z/ptc/ptc_LSSTComCam_R22_S20_LSSTComCam_calib_DM-46360_isrTaskLSST_ptcGen_20240926a_20240927T183452Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'fe73f6b4-0392-4a9e-af60-8567a7ccf073'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-46360/isrTaskLSST/ptcGen.20240926a/20240927T183452Z/ptc/ptc_LSSTComCam_R22_S21_LSSTComCam_calib_DM-46360_isrTaskLSST_ptcGen_20240926a_20240927T183452Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: ptc
+  dimensions:
+  - instrument
+  - detector
+  storage_class: PhotonTransferCurveDataset
+  is_calibration: true
+- type: dataset
+  dataset_type: ptc
+  run: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z
+  records:
+  - dataset_id:
+    - !uuid '890e7aef-a1ff-4889-999d-e4c5884ca226'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z/ptc/ptc_LSSTComCam_R22_S00_LSSTComCam_calib_DM-47447_gainFixup_ptcGen_20241107a_20241107T193934Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'cb73ceb1-f9f3-43fb-8150-03f70d697b5c'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z/ptc/ptc_LSSTComCam_R22_S10_LSSTComCam_calib_DM-47447_gainFixup_ptcGen_20241107a_20241107T193934Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ebbda3bc-7b5e-406c-9aca-cc856f8161ad'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z/ptc/ptc_LSSTComCam_R22_S11_LSSTComCam_calib_DM-47447_gainFixup_ptcGen_20241107a_20241107T193934Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a2658744-358c-421f-8d9d-384833276458'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z/ptc/ptc_LSSTComCam_R22_S12_LSSTComCam_calib_DM-47447_gainFixup_ptcGen_20241107a_20241107T193934Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f332c1e8-ba98-4780-9b72-76f994afaacb'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z/ptc/ptc_LSSTComCam_R22_S20_LSSTComCam_calib_DM-47447_gainFixup_ptcGen_20241107a_20241107T193934Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '52a4ac7d-9baa-4a80-bc95-867fa6f8cc29'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/DM-47447/gainFixup/ptcGen.20241107a/20241107T193934Z/ptc/ptc_LSSTComCam_R22_S21_LSSTComCam_calib_DM-47447_gainFixup_ptcGen_20241107a_20241107T193934Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: skyMap
+  dimensions:
+  - skymap
+  storage_class: SkyMap
+  is_calibration: false
+- type: dataset
+  dataset_type: skyMap
+  run: skymaps
+  records:
+  - dataset_id:
+    - !uuid '22925afb-26cd-45db-a9c3-b632c33e20b1'
+    data_id:
+    - skymap: lsst_cells_v1
+    path: skymaps/skyMap/skyMap_lsst_cells_v1_skymaps.pickle
+    formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
+- type: dataset_type
+  name: template_coadd
+  dimensions:
+  - band
+  - skymap
+  - tract
+  - patch
+  storage_class: ExposureF
+  is_calibration: false
+- type: dataset
+  dataset_type: template_coadd
+  run: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z
+  records:
+  - dataset_id:
+    - !uuid 'a744cdfc-531d-4372-ae5e-482625399480'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 4848
+      patch: 90
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/4848/90/r/template_coadd_4848_90_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'cd7a33ee-3cda-43bf-ae32-ade60b327acd'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 4848
+      patch: 91
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/4848/91/r/template_coadd_4848_91_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '111159e9-eeb6-4f91-8141-8c2307d13d3c'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 4849
+      patch: 89
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/4849/89/r/template_coadd_4849_89_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '097972eb-c8a7-46de-8163-575ad811ab59'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 13
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/13/r/template_coadd_5063_13_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '20cf5f5c-8dbf-45a7-8d9c-74d8e1691b82'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 14
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/14/r/template_coadd_5063_14_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '5f1d4059-6e07-4956-9f59-f9fa596916f3'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 15
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/15/r/template_coadd_5063_15_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'de547eb6-09d4-4051-83a7-e67b687017d0'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 16
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/16/r/template_coadd_5063_16_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '3f91cf22-559b-411f-a722-c47b1cd0cbfc'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 23
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/23/r/template_coadd_5063_23_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '26156ab6-c8c2-4d18-b8c1-66d8a6785a47'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 24
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/24/r/template_coadd_5063_24_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '8a395850-ae5e-4e9d-8646-82d82eaeee16'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 25
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/25/r/template_coadd_5063_25_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e7342806-9c9f-4f64-aee7-3684af484346'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 26
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/26/r/template_coadd_5063_26_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '6baca01d-f692-4928-bd3d-87fcd1acef14'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 33
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/33/r/template_coadd_5063_33_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'f8e1dbdf-1ec4-44a7-aa8a-187ae639a11e'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 34
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/34/r/template_coadd_5063_34_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'c77fcc48-c319-47df-8522-6616fe167323'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 35
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/35/r/template_coadd_5063_35_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '279e1424-7d9e-437a-ba91-c083f9fb3ba9'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 36
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/36/r/template_coadd_5063_36_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'ad54f1a8-084c-478b-8cdd-d7208c85dc7d'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 4
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/4/r/template_coadd_5063_4_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e0ba251e-8e8b-42c9-a697-7ba3c9ea0c3b'
+    data_id:
+    - band: r
+      skymap: lsst_cells_v1
+      tract: 5063
+      patch: 5
+    path: LSSTComCam/runs/DRP/DP1/w_2025_17/DM-50530/20250426T082611Z/template_coadd/5063/5/r/template_coadd_5063_5_r_lsst_cells_v1_LSSTComCam_runs_DRP_DP1_w_2025_17_DM-50530_20250426T082611Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: the_monster_20250219
+  dimensions:
+  - htm7
+  storage_class: SimpleCatalog
+  is_calibration: false
+- type: dataset
+  dataset_type: the_monster_20250219
+  run: refcats/DM-49042/the_monster_20250219
+  records:
+  - dataset_id:
+    - !uuid '8ed86338-86a0-484a-8619-368476f32c8e'
+    data_id:
+    - htm7: 147048
+    path: refcats/DM-49042/the_monster_20250219/the_monster_20250219/the_monster_20250219_147048_refcats_DM-49042_the_monster_20250219.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1c89855c-22fb-4481-80f3-56bcffaf9805'
+    data_id:
+    - htm7: 147049
+    path: refcats/DM-49042/the_monster_20250219/the_monster_20250219/the_monster_20250219_147049_refcats_DM-49042_the_monster_20250219.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6b437847-d976-447d-bce2-583acadb149c'
+    data_id:
+    - htm7: 147051
+    path: refcats/DM-49042/the_monster_20250219/the_monster_20250219/the_monster_20250219_147051_refcats_DM-49042_the_monster_20250219.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9e6ba7fd-5a4f-4deb-9cdd-cf6cdaaf036f'
+    data_id:
+    - htm7: 147172
+    path: refcats/DM-49042/the_monster_20250219/the_monster_20250219/the_monster_20250219_147172_refcats_DM-49042_the_monster_20250219.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3410e2e4-8f71-4e1c-927c-ade23b30d147'
+    data_id:
+    - htm7: 147174
+    path: refcats/DM-49042/the_monster_20250219/the_monster_20250219/the_monster_20250219_147174_refcats_DM-49042_the_monster_20250219.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd59393d9-56b2-4691-9195-f6ece83e2214'
+    data_id:
+    - htm7: 147175
+    path: refcats/DM-49042/the_monster_20250219/the_monster_20250219/the_monster_20250219_147175_refcats_DM-49042_the_monster_20250219.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: transmission_filter
+  dimensions:
+  - band
+  - instrument
+  - physical_filter
+  storage_class: TransmissionCurve
+  is_calibration: true
+- type: dataset
+  dataset_type: transmission_filter
+  run: LSSTComCam/calib/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '019e9bd2-6007-7828-b597-efeeb63a073e'
+    data_id:
+    - instrument: LSSTComCam
+      physical_filter: g_01
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_filter/g/g_01/transmission_filter_LSSTComCam_g_g_01_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5fd0-7d16-9901-17f98b8921ea'
+    data_id:
+    - instrument: LSSTComCam
+      physical_filter: i_06
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_filter/i/i_06/transmission_filter_LSSTComCam_i_i_06_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5faa-79d6-b395-23e3a4f7252c'
+    data_id:
+    - instrument: LSSTComCam
+      physical_filter: r_03
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_filter/r/r_03/transmission_filter_LSSTComCam_r_r_03_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-6041-74d7-8f22-c55acdb5b68f'
+    data_id:
+    - instrument: LSSTComCam
+      physical_filter: u_02
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_filter/u/u_02/transmission_filter_LSSTComCam_u_u_02_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-602d-744e-9b20-f9350ccc0087'
+    data_id:
+    - instrument: LSSTComCam
+      physical_filter: y_04
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_filter/y/y_04/transmission_filter_LSSTComCam_y_y_04_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5fea-7c34-824e-62ec8aba39ad'
+    data_id:
+    - instrument: LSSTComCam
+      physical_filter: z_03
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_filter/z/z_03/transmission_filter_LSSTComCam_z_z_03_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: transmission_optics
+  dimensions:
+  - instrument
+  storage_class: TransmissionCurve
+  is_calibration: true
+- type: dataset
+  dataset_type: transmission_optics
+  run: LSSTComCam/calib/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '019e9bd2-5aac-7a96-a1a9-d64b7450c412'
+    data_id:
+    - instrument: LSSTComCam
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_optics/transmission_optics_LSSTComCam_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: transmission_sensor
+  dimensions:
+  - instrument
+  - detector
+  storage_class: TransmissionCurve
+  is_calibration: true
+- type: dataset
+  dataset_type: transmission_sensor
+  run: LSSTComCam/calib/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '019e9bd2-5ecc-75fe-80bc-5a731df54145'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 0
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S00_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5eb9-76ba-bc93-39014f0ccbdb'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 1
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S01_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5f02-70b1-93e2-95632a2fb13a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 2
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S02_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5ee8-7d5c-9ae5-ada07c9304e5'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 3
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S10_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5e88-72ef-b383-770b74706b0a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 4
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S11_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5ea1-70e1-ade4-9bb849e348c8'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 5
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S12_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5ed8-743b-86a8-37ca293c6927'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 6
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S20_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5efa-7a75-96fa-4efa5519599a'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 7
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S21_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '019e9bd2-5f0e-7779-9652-7c294381b7dc'
+    data_id:
+    - instrument: LSSTComCam
+      detector: 8
+    path: LSSTComCam/calib/curated/19700101T000000Z/transmission_sensor/transmission_sensor_LSSTComCam_R22_S22_LSSTComCam_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: associations
+  collection: LSSTComCam/calib/DM-46360/isrTaskLSST/bias.20240926a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '525b37f8-9906-400e-8b96-eed277577a85'
+    - !uuid '527b13b0-96c8-4e6c-a5e1-43a5f908b96a'
+    - !uuid 'e40a8760-ad82-4fd7-acff-5281cc1e774f'
+    - !uuid '54e1afb1-1a55-4836-bb03-933416e89024'
+    - !uuid 'da20334f-9b0a-4184-81ef-7e8c9c3ab8c5'
+    - !uuid 'f9f6c0fd-03a7-4d17-be2d-277299199f80'
+- type: associations
+  collection: LSSTComCam/calib/DM-46360/isrTaskLSST/dark.20240926a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '0207201d-3900-4667-9e6c-51f07b97fa82'
+    - !uuid '3eda60d5-1375-4f39-92e5-4ecb939376fc'
+    - !uuid '1184d08d-04e1-45e7-b6f0-d74b5849c06a'
+    - !uuid '94f60f42-61ef-46e8-8a6f-3687b7309ac6'
+    - !uuid '14a36d62-72fe-4c2d-b345-46452334c252'
+    - !uuid '3127a4c7-0f91-4970-bdf6-2fda7e038719'
+- type: associations
+  collection: LSSTComCam/calib/DM-46360/isrTaskLSST/defects.20240926a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid 'a95d8d7f-e0a7-4b96-b806-fc6a215bc8a1'
+    - !uuid 'c13c233f-61a4-474f-b524-4d62f543f0c0'
+    - !uuid '163e9151-3dfd-43f5-b28c-e86b8c5ce734'
+    - !uuid 'fd69b2a3-cf57-4ba5-92a8-b9830cc8d14b'
+    - !uuid '56723971-2a6d-480b-9ce9-b226ea65bf11'
+    - !uuid 'c1750962-ae65-45b9-a0cf-200727b21457'
+- type: associations
+  collection: LSSTComCam/calib/DM-46360/isrTaskLSST/flat-r.20240926a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '7859a883-9a9e-4c05-9ace-828d53e7f641'
+    - !uuid '14f58f8e-5c28-4ce9-bdca-0b811050846e'
+    - !uuid '07285f4a-27f5-46ed-84e1-46b06e275fe3'
+    - !uuid '74c97de7-d290-4603-8953-c900cd9c830c'
+    - !uuid 'bcd819db-82e9-4af2-bd99-809fddecf56a'
+    - !uuid '7eeea6e5-0fa2-4468-a81a-72427a19c17a'
+- type: associations
+  collection: LSSTComCam/calib/DM-46360/isrTaskLSST/linearizer.20240926a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid 'ff177d36-2a2f-4860-814e-c8052ec93a9f'
+    - !uuid '29909abe-b42f-4c42-a6a1-e53ed1df0b96'
+    - !uuid 'bb771fc8-fdfc-48b1-98e7-2774ac6d80d4'
+    - !uuid '1beeede0-77d4-4080-be9d-76c6610c2e94'
+    - !uuid '08616902-40f3-4016-9605-e0aa5ca7db44'
+    - !uuid '8a523438-9ecf-4103-9d79-2067437011aa'
+- type: associations
+  collection: LSSTComCam/calib/DM-46360/isrTaskLSST/ptc.20240926a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '23c98ed6-00fc-45e7-99bc-6d1ff66e0a1f'
+    - !uuid 'd430c4a3-f4fb-4e31-9d74-3a44170b7361'
+    - !uuid 'eccc02aa-7e71-4ec0-a4a8-e14a4a2dbeb3'
+    - !uuid '2b710176-8518-4643-a55e-9d3d18a29f18'
+    - !uuid '047119ae-8be5-4d70-947e-e0efa236daf5'
+    - !uuid 'fe73f6b4-0392-4a9e-af60-8567a7ccf073'
+- type: associations
+  collection: LSSTComCam/calib/DM-47197/pseudoFlat/flat-r.20241028d
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid 'a3ab14f8-4e63-425a-b12d-2e350eb66bb4'
+    - !uuid '6fc9800f-3497-47e3-8a57-669636063517'
+    - !uuid '1a3f8e44-d45e-44bf-b579-c7f15f81e9ab'
+    - !uuid '75179eff-74f9-4846-8331-ebcbfa24542f'
+    - !uuid 'fa7ca46b-3b1f-4a2e-98c7-9d4ed02c5caa'
+    - !uuid '7991732b-3e34-4966-9697-ad4b3042ea03'
+- type: associations
+  collection: LSSTComCam/calib/DM-47365/addManualDefects/defects.20241211a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2024-10-20 00:00:00.000000000'
+      end: null
+    dataset_ids:
+    - !uuid 'f636f05d-5f14-44ef-b0a8-d29f1ea68d04'
+    - !uuid 'df5f089f-a401-4e69-805c-3f28c35c3620'
+    - !uuid 'ffb384ff-76de-4f56-9a9c-f751d0b61166'
+    - !uuid 'ea28810d-ff8a-4cca-9d71-a35be9c25fa0'
+    - !uuid 'a15f2975-8701-4ca4-b818-a18d220c11cd'
+    - !uuid '14ffcacc-9346-4df8-977f-a55968ed0c63'
+- type: associations
+  collection: LSSTComCam/calib/DM-47447/gainFixup/bias.20241107a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2024-10-20 00:00:00.000000000'
+      end: null
+    dataset_ids:
+    - !uuid '4fa5a299-076e-47fc-b2c3-36628c92a8a2'
+    - !uuid 'a72b4e0a-50bb-4ff9-9529-54dc8829bf8c'
+    - !uuid '021c5930-49a7-49bc-95b0-b4f19fee68d9'
+    - !uuid '34505e75-b5d2-4c84-aa63-85a634a47f40'
+    - !uuid '401ef61c-481c-4991-bd8f-327525199e81'
+    - !uuid '38df50bb-c98f-426d-b2fc-16057e37a336'
+- type: associations
+  collection: LSSTComCam/calib/DM-47447/gainFixup/dark.20241107a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2024-10-20 00:00:00.000000000'
+      end: null
+    dataset_ids:
+    - !uuid 'a0fb0176-1c08-4205-8bd6-f2c799d31e16'
+    - !uuid '70e2d442-d6b7-40bc-bef8-72940f557403'
+    - !uuid '90cb6169-9059-4d27-825e-1029c8e23906'
+    - !uuid '6762511b-45b9-479b-8c96-31b7f80f5f2b'
+    - !uuid 'a270c533-45e7-4554-a01c-96b5efe8870b'
+    - !uuid '9d0f7592-9e44-46e3-b9e7-2ea2064f4fba'
+- type: associations
+  collection: LSSTComCam/calib/DM-47447/gainFixup/flat-r.20241107a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2024-10-20 00:00:00.000000000'
+      end: null
+    dataset_ids:
+    - !uuid '6f50af82-d7be-4991-8b16-c38c6484118c'
+    - !uuid '739a4f4d-e88e-4b00-bf39-2de7a6e9a111'
+    - !uuid '60db3e46-b638-45be-b784-6fd5715995aa'
+    - !uuid 'cc954ee4-6d01-464b-902c-52d9d07849cd'
+    - !uuid 'f1f7c9fb-798f-4586-858f-c5614c6b0ef3'
+    - !uuid '793e325e-feb1-479f-9e1a-101592e16413'
+- type: associations
+  collection: LSSTComCam/calib/DM-47447/gainFixup/ptc.20241107a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2024-10-20 00:00:00.000000000'
+      end: null
+    dataset_ids:
+    - !uuid '890e7aef-a1ff-4889-999d-e4c5884ca226'
+    - !uuid 'cb73ceb1-f9f3-43fb-8150-03f70d697b5c'
+    - !uuid 'ebbda3bc-7b5e-406c-9aca-cc856f8161ad'
+    - !uuid 'a2658744-358c-421f-8d9d-384833276458'
+    - !uuid 'f332c1e8-ba98-4780-9b72-76f994afaacb'
+    - !uuid '52a4ac7d-9baa-4a80-bc95-867fa6f8cc29'
+- type: associations
+  collection: LSSTComCam/calib/DM-47498/fallbackFlats/flat-all.20241112a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '83981ef9-c1f2-46a2-b72d-5818b75b2277'
+    - !uuid '0bcd5e48-caa9-4c58-aad9-d2f1b604f0c3'
+    - !uuid '432a94ef-a316-4df7-8e52-43aa11710024'
+    - !uuid 'f80ade6c-6c25-47c2-b43d-62593329c01f'
+    - !uuid '4fc3a385-df60-4f2c-a7dc-abce3c13a66a'
+    - !uuid 'd4509e6a-e188-466e-9396-9bd53254281e'
+- type: associations
+  collection: LSSTComCam/calib/DM-47547/twiflat/flat-r.20241113a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2024-10-20 00:00:00.000000000'
+      end: null
+    dataset_ids:
+    - !uuid 'cac7df40-6451-446d-9cd7-858d38bfd047'
+    - !uuid 'deade323-c728-4ed5-ae84-eaf40aff2a53'
+    - !uuid '7eaad056-e811-4b3f-a444-ef0f8f81f9e7'
+    - !uuid '58989214-1950-48ac-a1ed-a35a8940c8ad'
+    - !uuid 'e3f08369-066b-4b4f-bfea-656b5d2f4f06'
+    - !uuid '02a913e5-d4ea-4d77-8cf3-80b9aa419ae0'
+- type: associations
+  collection: LSSTComCam/calib/DM-48520/DP1/bias.20250207a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '613798c1-2050-4d01-a4f3-a46a4618d5d9'
+    - !uuid '3265d617-5bee-404e-b625-f0388022826c'
+    - !uuid '7ad26651-ee13-44a4-a2c8-36f5d29575e6'
+    - !uuid '06c99645-7bd1-4801-8166-df4b0a2292ff'
+    - !uuid '02368548-71dc-48b6-ba0a-2bec567b8253'
+    - !uuid '93e78869-f939-45e2-9058-29e38a0c2562'
+- type: associations
+  collection: LSSTComCam/calib/DM-48520/DP1/cti.20250207a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid 'b6063f80-06f5-4de0-89ee-9b29c3871c9a'
+    - !uuid '8b59403f-eb9e-47d7-8b0c-5455067d3482'
+    - !uuid '4397f3bc-3a68-44a6-9868-a9b7ca0722de'
+    - !uuid '24b632e7-9431-4c4e-a80c-0b99aad8547c'
+    - !uuid '022ba362-1837-46b5-841a-343a7b5d0238'
+    - !uuid '4969690d-f01e-473a-b31d-d3f527176463'
+- type: associations
+  collection: LSSTComCam/calib/DM-48520/DP1/dark.20250207a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '55ff5c0c-0192-4149-8c60-601238981cf3'
+    - !uuid 'b7b11f84-5f63-4688-a3d2-4a67bb42726d'
+    - !uuid '777e2e23-031c-49c3-9a33-c3079340acfb'
+    - !uuid '3c85a317-c76d-4ddf-a0df-4e8d91fbbdf4'
+    - !uuid '7da547d0-6145-4510-936b-fea348de284e'
+    - !uuid 'b3035ce1-ae50-4a20-95de-9451cdde44a8'
+- type: associations
+  collection: LSSTComCam/calib/DM-48520/DP1/defects.20250207a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '1a4dc667-8319-43f5-931f-e7c1a326ef08'
+    - !uuid 'ccbdaf46-5c0c-4387-82f5-9a905d040b8d'
+    - !uuid '8d6470f2-aa55-4e25-a3fe-1932c792c815'
+    - !uuid 'd54f2c2b-e9cf-45f7-8386-379738e21563'
+    - !uuid '8d8118ff-4145-47dd-b6bd-46d25f1adf93'
+    - !uuid '9104bb34-d9ee-42fd-afa6-c2e5410bf256'
+- type: associations
+  collection: LSSTComCam/calib/DM-48520/DP1/flat-r.20250207a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid 'dfade34a-3413-4101-8d3e-54daa4ee7fd8'
+    - !uuid '730f4228-faf5-49e7-bc47-c15d3f41c99d'
+    - !uuid 'e2ce5081-3da3-41ad-8337-7036ed4e0f85'
+    - !uuid '75eea43a-7ff4-42dd-81f9-3eb345152985'
+    - !uuid 'f99dcfe4-09b1-4428-ae5c-3bfd38650698'
+    - !uuid '18dea195-d9de-4097-a721-f8d8ce4c6eb5'
+- type: associations
+  collection: LSSTComCam/calib/DM-48650
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '1970-01-01 00:00:08.000082000'
+      end: null
+    dataset_ids:
+    - !uuid '711f7c84-2597-4788-bd1d-f014fe41568c'
+    - !uuid '4ef74624-ebce-4b27-bf03-56f7eebffce3'
+    - !uuid 'efa43fde-51e0-4dda-a8d1-577b6e9cc395'
+    - !uuid '37c227ab-5a1e-4b5a-9133-64a769a65ada'
+    - !uuid '048ac9b8-e863-44d1-b1cc-8ea39bc1a1f1'
+    - !uuid 'aab5170b-2900-4387-bc21-c8cbe06e7681'
+- type: associations
+  collection: LSSTComCam/calib/DM-48955/illumCorr/illuminationCorrection.20250224a
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '3765abd3-5c59-4389-92a4-7c9de627fea5'
+    - !uuid '96473c86-fe41-4506-b142-9a7158e4d982'
+    - !uuid '6ee005f2-570e-4fce-9a84-f7b58c61113f'
+    - !uuid '717ae1f5-5122-4a56-963a-3c2d139bd71a'
+    - !uuid 'fdf51650-cfd5-44f3-b6c1-3476e0918df4'
+    - !uuid '544d3413-8c77-49d6-927f-c8593f1cec3e'
+- type: associations
+  collection: LSSTComCam/calib/curated
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '1970-01-01 00:00:08.000082000'
+      end: null
+    dataset_ids:
+    - !uuid '019e9bd2-5d70-73b2-8077-9b3630600dbc'
+    - !uuid '019e9bd2-5d43-72f5-b99a-0fd0752f0c76'
+    - !uuid '019e9bd2-5d88-75fd-8686-09fec94b7f75'
+    - !uuid '019e9bd2-5d5b-716a-b40d-bd573eb1ddf4'
+    - !uuid '019e9bd2-5db4-757c-b97e-224a6e488c03'
+    - !uuid '019e9bd2-5d0a-7b33-9a9f-fc8e5c279bd7'
+    - !uuid '019e9bd2-5d2f-7bbb-95d2-236461f8286b'
+    - !uuid '019e9bd2-5cd8-7115-8b53-f1147c967c6a'
+    - !uuid '019e9bd2-5d9d-7f6e-a8ad-bd23f583a928'
+    - !uuid '019e9bd2-5c1f-7a07-b2c5-fe56471cb97f'
+    - !uuid '019e9bd2-5c0b-72bb-9ff0-07d89b7ac9a3'
+    - !uuid '019e9bd2-5c41-7c44-b04a-6fd9510dbd2d'
+    - !uuid '019e9bd2-5bd5-78ac-93ad-42f882716e31'
+    - !uuid '019e9bd2-5bf0-7eb4-b89d-34a89b410781'
+    - !uuid '019e9bd2-5bc4-7509-9fc9-291e6723af58'
+    - !uuid '019e9bd2-5c59-7ebe-b9b3-cc52fa5a7823'
+    - !uuid '019e9bd2-5b8c-7d1e-b4f1-58033dd56770'
+    - !uuid '019e9bd2-5bab-7e20-8c24-4d80ddcba994'
+    - !uuid '019e9bd2-6007-7828-b597-efeeb63a073e'
+    - !uuid '019e9bd2-5fd0-7d16-9901-17f98b8921ea'
+    - !uuid '019e9bd2-5faa-79d6-b395-23e3a4f7252c'
+    - !uuid '019e9bd2-6041-74d7-8f22-c55acdb5b68f'
+    - !uuid '019e9bd2-602d-744e-9b20-f9350ccc0087'
+    - !uuid '019e9bd2-5fea-7c34-824e-62ec8aba39ad'
+    - !uuid '019e9bd2-5aac-7a96-a1a9-d64b7450c412'
+    - !uuid '019e9bd2-5ecc-75fe-80bc-5a731df54145'
+    - !uuid '019e9bd2-5eb9-76ba-bc93-39014f0ccbdb'
+    - !uuid '019e9bd2-5f02-70b1-93e2-95632a2fb13a'
+    - !uuid '019e9bd2-5ee8-7d5c-9ae5-ada07c9304e5'
+    - !uuid '019e9bd2-5e88-72ef-b383-770b74706b0a'
+    - !uuid '019e9bd2-5ea1-70e1-ade4-9bb849e348c8'
+    - !uuid '019e9bd2-5ed8-743b-86a8-37ca293c6927'
+    - !uuid '019e9bd2-5efa-7a75-96fa-4efa5519599a'
+    - !uuid '019e9bd2-5f0e-7779-9652-7c294381b7dc'
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid '019e9bd2-59e5-7a72-a4b8-b62f6915f62e'
