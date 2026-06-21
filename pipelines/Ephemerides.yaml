@@ -1,0 +1,11 @@
+description: Pipeline for downloading solar system ephemerides given raw images
+instrument: lsst.obs.lsst.LsstComCam
+tasks:
+  getRegionTimeFromVisit:
+    class: lsst.pipe.tasks.getRegionTimeFromVisit.GetRegionTimeFromVisitTask
+    config:
+      connections.dummy_visit: visit_dummy
+  # mpSkyEphemerisQuery: lsst.ap.association.MPSkyEphemerisQueryTask
+  #     config:
+  #   - connections.predictedRegionTime: regionTimeInfo
+  #     connections.ssObjects: preloaded_ss_object
