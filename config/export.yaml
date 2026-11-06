@@ -2421,7 +2421,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '019edb71-adb4-7b53-9dee-b2f75141ad69'
+    - !uuid '01a1af80-85cb-794d-bc0d-c5759a6c5e97'
     data_id:
     - instrument: LSSTComCam
       detector: 0
@@ -2429,7 +2429,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-12T02_10_52.368/preloaded_dia_forced_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb71-adb4-73a6-8cb4-e76d5cab136d'
+    - !uuid '01a1af80-85ca-7d85-ae59-506776534381'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2437,7 +2437,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-12T02_10_52.368/preloaded_dia_forced_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb78-26d7-7611-a7b6-a2f33e8cc5ab'
+    - !uuid '01a1af84-d47f-7ba8-ada3-02fca959f05c'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2445,7 +2445,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-17T07_52_30.357/preloaded_dia_forced_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb78-26d7-70aa-99f2-5f82f18cd233'
+    - !uuid '01a1af84-d47f-7f29-bf48-3fcdd94a6fde'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2453,7 +2453,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-17T07_52_30.357/preloaded_dia_forced_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb7e-4787-76ce-87f7-cf046d7cab47'
+    - !uuid '01a1af88-6c40-7092-b1fb-ce7281dafeb8'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2461,7 +2461,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-20T01_16_40.691/preloaded_dia_forced_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb7e-4787-7bed-ae9b-697866af4dab'
+    - !uuid '01a1af88-6c40-7868-a97f-ef65b07cc56c'
     data_id:
     - instrument: LSSTComCam
       detector: 6
@@ -2469,7 +2469,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-20T01_16_40.691/preloaded_dia_forced_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb85-3710-7a57-8b0b-6a90359b4205'
+    - !uuid '01a1af8c-77bf-752a-8dd5-f83c0637f1f7'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2477,7 +2477,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-21T05_49_25.789/preloaded_dia_forced_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb85-370f-7004-b9c8-d6a5a139afe1'
+    - !uuid '01a1af8c-77bf-79ca-bfbc-242bc663b902'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2485,7 +2485,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-21T05_49_25.789/preloaded_dia_forced_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb8b-5957-7cb7-8cf9-ee4d942ab175'
+    - !uuid '01a1af90-4620-7561-bb67-4118e9f46c88'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2493,7 +2493,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-29T01_35_04.206/preloaded_dia_forced_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb8b-5956-7545-b948-726d911d1279'
+    - !uuid '01a1af90-4620-7787-a712-89f53a1133ea'
     data_id:
     - instrument: LSSTComCam
       detector: 7
@@ -2501,7 +2501,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-11-29T01_35_04.206/preloaded_dia_forced_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb91-8ca9-769a-b358-2f8e77077373'
+    - !uuid '01a1af93-e35a-701c-994b-ae439fc255d6'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2509,7 +2509,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/2024-12-07T02_29_08.761/preloaded_dia_forced_source_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb91-8ca9-72c7-b481-42c0970f0a5d'
+    - !uuid '01a1af93-e35a-7060-ba6f-1567bd2284d1'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2529,7 +2529,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '019edb71-adb4-77c8-9efe-6cc1c8d4978b'
+    - !uuid '01a1af80-85cb-7d50-aad8-a3a500dcbb59'
     data_id:
     - instrument: LSSTComCam
       detector: 0
@@ -2537,7 +2537,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-12T02_10_52.368/preloaded_dia_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb71-adb4-7928-ac2f-949bae3aa589'
+    - !uuid '01a1af80-85cb-7c76-834a-2df7164b2630'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2545,7 +2545,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-12T02_10_52.368/preloaded_dia_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb78-26d7-7969-9e37-9186ed0e34bf'
+    - !uuid '01a1af84-d47f-7a62-8cd2-b99c3b3f3678'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2553,7 +2553,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-17T07_52_30.357/preloaded_dia_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb78-26d7-70c4-a767-bf8335b3e50f'
+    - !uuid '01a1af84-d47f-746d-bee2-b6694524e6db'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2561,7 +2561,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-17T07_52_30.357/preloaded_dia_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb7e-4787-76ea-a9d6-f6835c21cb14'
+    - !uuid '01a1af88-6c40-784e-9ba4-83aa9d79dbe5'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2569,7 +2569,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-20T01_16_40.691/preloaded_dia_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb7e-4787-749d-a907-b514660e5db2'
+    - !uuid '01a1af88-6c40-75b4-9e50-0f43c7f850de'
     data_id:
     - instrument: LSSTComCam
       detector: 6
@@ -2577,7 +2577,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-20T01_16_40.691/preloaded_dia_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb85-3710-760e-8ed8-4eb6cfdd40dc'
+    - !uuid '01a1af8c-77bf-79fc-a2ae-d2335b6ca0a0'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2585,7 +2585,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-21T05_49_25.789/preloaded_dia_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb85-370f-7065-ac2d-de5f096c5e2b'
+    - !uuid '01a1af8c-77bf-7bdd-9c53-ac30ed07f29f'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2593,7 +2593,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-21T05_49_25.789/preloaded_dia_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb8b-5957-7b3c-a175-9c08ee9e8504'
+    - !uuid '01a1af90-4620-7f36-85a5-c461b18bcedc'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2601,7 +2601,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-29T01_35_04.206/preloaded_dia_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb8b-5956-70c5-8488-7d95fc3a80aa'
+    - !uuid '01a1af90-4620-77e5-8e03-f51e0af196c3'
     data_id:
     - instrument: LSSTComCam
       detector: 7
@@ -2609,7 +2609,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-11-29T01_35_04.206/preloaded_dia_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb91-8ca9-77a8-91f2-f18697866175'
+    - !uuid '01a1af93-e35a-7aa2-b0d0-8ba6f3a121f8'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2617,7 +2617,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/2024-12-07T02_29_08.761/preloaded_dia_object_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb91-8ca9-79fa-b18d-012cb2013fd8'
+    - !uuid '01a1af93-e35a-789b-b739-3178afe87a23'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2637,7 +2637,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '019edb71-adb4-7eb1-bd48-3c3f577fdd79'
+    - !uuid '01a1af80-85cb-7a66-9f8d-452a34125fda'
     data_id:
     - instrument: LSSTComCam
       detector: 0
@@ -2645,7 +2645,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-12T02_10_52.368/preloaded_dia_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb71-adb4-72d9-af70-b14938260d1a'
+    - !uuid '01a1af80-85cb-7d49-b214-f50e78728fe8'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2653,7 +2653,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-12T02_10_52.368/preloaded_dia_source_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb78-26d7-7136-b24c-628905b4b8ff'
+    - !uuid '01a1af84-d47f-7541-bb10-1414ada0e4a3'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2661,7 +2661,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-17T07_52_30.357/preloaded_dia_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb78-26d7-772e-b43c-e8662b8cc179'
+    - !uuid '01a1af84-d47f-7fb8-8a20-cb576f8aadd9'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2669,7 +2669,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-17T07_52_30.357/preloaded_dia_source_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb7e-4787-7b6c-a7c9-7573d2281c9f'
+    - !uuid '01a1af88-6c40-75a1-b375-0185350e239c'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2677,7 +2677,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-20T01_16_40.691/preloaded_dia_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb7e-4787-7d6f-b5f7-1af2ee2e3579'
+    - !uuid '01a1af88-6c40-7ce2-b0d5-846e8fd7fc51'
     data_id:
     - instrument: LSSTComCam
       detector: 6
@@ -2685,7 +2685,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-20T01_16_40.691/preloaded_dia_source_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb85-3710-784f-8ed1-f8b171543f37'
+    - !uuid '01a1af8c-77bf-7781-9799-8d86443bc6d6'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2693,7 +2693,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-21T05_49_25.789/preloaded_dia_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb85-370f-70bf-a50e-2b0f7b5dd6b0'
+    - !uuid '01a1af8c-77bf-7803-bcb6-3bf2206f7a8a'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2701,7 +2701,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-21T05_49_25.789/preloaded_dia_source_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb8b-5957-7ee7-aba7-32714739b9b6'
+    - !uuid '01a1af90-4620-7c63-9353-cea1f37c49ab'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2709,7 +2709,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-29T01_35_04.206/preloaded_dia_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb8b-5956-72a5-a2ee-085e30dd563c'
+    - !uuid '01a1af90-4620-73bb-8430-2467bf955769'
     data_id:
     - instrument: LSSTComCam
       detector: 7
@@ -2717,7 +2717,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-11-29T01_35_04.206/preloaded_dia_source_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb91-8ca9-7846-a39d-7f7f9bfabb62'
+    - !uuid '01a1af93-e35a-719d-be6c-2f6df48bbbd4'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2725,7 +2725,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/2024-12-07T02_29_08.761/preloaded_dia_source_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019edb91-8ca9-78c0-b276-637c57248a88'
+    - !uuid '01a1af93-e35a-7c9b-b1df-7846d848603f'
     data_id:
     - instrument: LSSTComCam
       detector: 4
