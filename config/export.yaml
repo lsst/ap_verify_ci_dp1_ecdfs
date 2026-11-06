@@ -2745,7 +2745,7 @@ data:
   run: sso/mpsky
   records:
   - dataset_id:
-    - !uuid '019e9be1-e023-7773-939a-c2cfe0865532'
+    - !uuid '01a1afe9-ebb8-7e1e-9fd1-79ea2e1ff4c6'
     data_id:
     - instrument: LSSTComCam
       detector: 0
@@ -2753,7 +2753,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-12T02_10_52.368/preloaded_ss_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S00_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e04f-7594-bed2-bcc72d03d0ba'
+    - !uuid '01a1afe9-ec18-71c7-8b21-a5490fad9e2b'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2761,7 +2761,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-12T02_10_52.368/preloaded_ss_object_LSSTComCam_2024-11-12T02_10_52_368_R22_S10_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e055-76d3-bf1b-64640ca6c294'
+    - !uuid '01a1afe9-ec1d-740a-a065-e2dd525bac0a'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2769,7 +2769,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-17T07_52_30.357/preloaded_ss_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S11_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e05c-78b0-9d02-236c36c02f95'
+    - !uuid '01a1afe9-ec21-7bb8-8304-abafdf5d05c3'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2777,7 +2777,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-17T07_52_30.357/preloaded_ss_object_LSSTComCam_2024-11-17T07_52_30_357_R22_S12_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e062-7df2-a964-b529d8af6ca6'
+    - !uuid '01a1afe9-ec25-7bae-a41b-13cf6f2ecac2'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2785,7 +2785,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-20T01_16_40.691/preloaded_ss_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S10_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e068-79e0-b72d-0b48b95afba9'
+    - !uuid '01a1afe9-ec28-766c-8690-7098133afdbf'
     data_id:
     - instrument: LSSTComCam
       detector: 6
@@ -2793,7 +2793,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-20T01_16_40.691/preloaded_ss_object_LSSTComCam_2024-11-20T01_16_40_691_R22_S20_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e06d-7a22-b3c6-a513bbafc842'
+    - !uuid '01a1afe9-ec2c-7e17-afd4-1bfc3a90d6cc'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2801,7 +2801,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-21T05_49_25.789/preloaded_ss_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S11_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e074-7f9f-8588-1ce5ad001d2b'
+    - !uuid '01a1afe9-ec30-778f-8a46-1325f89ddb74'
     data_id:
     - instrument: LSSTComCam
       detector: 5
@@ -2809,7 +2809,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-21T05_49_25.789/preloaded_ss_object_LSSTComCam_2024-11-21T05_49_25_789_R22_S12_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e087-7fde-bacb-92070d43d385'
+    - !uuid '01a1afe9-ec3b-7448-9cbe-a5974a30c885'
     data_id:
     - instrument: LSSTComCam
       detector: 4
@@ -2817,7 +2817,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-29T01_35_04.206/preloaded_ss_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S11_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e08e-70d3-b38a-1726d87ffd9e'
+    - !uuid '01a1afe9-ec3f-78af-8e4f-e1d3719a29c5'
     data_id:
     - instrument: LSSTComCam
       detector: 7
@@ -2825,7 +2825,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-11-29T01_35_04.206/preloaded_ss_object_LSSTComCam_2024-11-29T01_35_04_206_R22_S21_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e07a-7d09-bc7f-4bda2e7c9170'
+    - !uuid '01a1afe9-ec33-78b1-8011-c7fdae200c6e'
     data_id:
     - instrument: LSSTComCam
       detector: 3
@@ -2833,7 +2833,7 @@ data:
     path: sso/mpsky/preloaded_ss_object/2024-12-07T02_29_08.761/preloaded_ss_object_LSSTComCam_2024-12-07T02_29_08_761_R22_S10_sso_mpsky.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019e9be1-e081-710a-afec-06bc8d6034f2'
+    - !uuid '01a1afe9-ec37-78f1-a709-cdbce705f622'
     data_id:
     - instrument: LSSTComCam
       detector: 4
