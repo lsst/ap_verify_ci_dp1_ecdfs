@@ -1,0 +1,24 @@
+description: Stub instrumented Alert Production pipeline
+#
+# This pipeline does not depend on the local ApVerify.yaml, because the definition
+# of the primary ApVerifyWithFakes.yaml is more likely to change than the
+# data-specific overrides, and importing both pipelines can't merge changes to
+# the same task.
+
+imports:
+  - location: $AP_VERIFY_DIR/pipelines/LSSTComCam/ApVerifyWithFakes.yaml
+tasks:
+  # Use the model that's actually in this dataset, regardless of defaults.
+  computeReliability:
+    class: lsst.meas.transiNet.RBTransiNetTask
+    config:
+      # Use dataset's model
+      file: $AP_VERIFY_CI_DP1_ECDFS_DIR/config/computeReliability.py
+  injectVisit:
+    class: lsst.source.injection.inject_visit.VisitInjectTask
+    config:
+    - selection: "np.isin(injection_catalog['visit'], {visit}) & (injection_catalog['mag']>16) & (injection_catalog['isVisitSource'])"
+  injectTemplate:
+    class: lsst.source.injection.inject_exposure.VisitInjectTask
+    config:
+    - selection: "np.isin(injection_catalog['visit'], {visit}) & (injection_catalog['mag']>16) & (injection_catalog['isTemplateSource'])"

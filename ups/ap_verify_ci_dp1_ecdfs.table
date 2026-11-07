@@ -1,0 +1,11 @@
+# Data dependencies for this dataset.
+# This package should depend on the appropriate obs package and any other
+# packages needed to read the data. It should not depend on ap_verify or other
+# "pipelines-like" packages, as this may lead to circular dependencies.
+
+setupRequired(obs_lsst)
+# If the repository contains templates, include the PSF package used to make them.
+# This ensures they can be loaded even if the dependency isn't picked up elsewhere.
+# Most coadd pipelines use one of the following:
+setupRequired(meas_extensions_psfex)
+setupRequired(meas_extensions_piff)
