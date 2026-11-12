@@ -37,7 +37,10 @@ import subprocess
 import sys
 import tempfile
 
+import astropy.units as u
+import numpy as np
 import pandas
+from astropy.table import Table
 from lsst.afw.table import SourceCatalog
 
 import lsst.log
@@ -61,6 +64,12 @@ EPHEM_DATASET = "preloaded_ss_object"
 DEST_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "preloaded"))
 DEST_COLLECTION = "sso"
 DEST_RUN = DEST_COLLECTION + "/mpsky"
+# Units of the ephemeris columns, as set by MPSkyEphemerisQueryTask.
+EPHEM_UNITS = {
+    "ra": u.deg, "dec": u.deg, "tmin": u.d, "tmax": u.d, "Err(arcsec)": u.arcsec,
+    "MPCORB_q": u.AU, "MPCORB_e": u.dimensionless_unscaled, "MPCORB_incl": u.deg,
+    "MPCORB_node": u.deg, "MPCORB_peri": u.deg, "MPCORB_t_p": u.d, "MPCORB_epoch": u.d,
+}
 
 
 ########################################
@@ -157,6 +166,32 @@ def _make_visit_datasets(repo, run):
 ########################
 # Load the ephemerides from the pickle file
 
+def _to_astropy(ephem_cat, poly_sizes):
+    """Convert a pickled ephemeris catalog to the table format written by
+    MPSkyEphemerisQueryTask.
+
+    Parameters
+    ----------
+    ephem_cat : `pandas.DataFrame`
+        The ephemerides for one detector and group.
+    poly_sizes : `dict` [`str`, `int`]
+        The number of polynomial coefficients in each ``*_poly`` column.
+
+    Returns
+    -------
+    table : `astropy.table.Table`
+        The ephemerides, with units and one 2-D column per polynomial.
+    """
+    table = Table.from_pandas(ephem_cat.drop(columns=list(poly_sizes)))
+    for column, size in poly_sizes.items():
+        coeffs = np.array(ephem_cat[column].tolist(), dtype=float)
+        table[column] = coeffs.reshape(len(ephem_cat), size)
+    for column, unit in EPHEM_UNITS.items():
+        table[column].unit = unit
+    table["MPCORB_unpacked_primary_provisional_designation"] = table["ObjID"]
+    return table
+
+
 def _load_ephem(ephem_file, ephem_type, run, dest_repo):
     """Copy ephemerides between two repositories.
 
@@ -179,10 +214,13 @@ def _load_ephem(ephem_file, ephem_type, run, dest_repo):
     dest_repo.collections.register(run, CollectionType.RUN)
     with open(ephem_file, "rb") as f:
         ephem_cats = pandas.read_pickle(f)
+        nonempty = [cat for cat in ephem_cats.values() if len(cat) > 0]
+        poly_sizes = {column: len(nonempty[0][column].iloc[0])
+                      for column in nonempty[0].columns if column.endswith("_poly")}
         for (group, detector), ephem_cat in ephem_cats.items():
             dataId = dict(group=group, detector=detector, instrument="LSSTComCam")
-            logging.debug("Putting ephemerides for group=%d, detector=%d", group, detector)
-            dest_repo.put(ephem_cat, ephem_type, dataId=dataId, run=run)
+            logging.debug("Putting ephemerides for group=%s, detector=%d", group, detector)
+            dest_repo.put(_to_astropy(ephem_cat, poly_sizes), ephem_type, dataId=dataId, run=run)
     logging.debug("Read %d ephemerides from %s", len(ephem_cats), ephem_file)
 
 
